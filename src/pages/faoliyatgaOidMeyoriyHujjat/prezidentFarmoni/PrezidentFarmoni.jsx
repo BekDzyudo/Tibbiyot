@@ -5,7 +5,7 @@ import medic from "../../../assets/images/medic.png";
 function PrezidentFarmoni() {
   return (
     <div className="prezidentFarmoni container">
-      <h1>Faoliyatga oid me’yoriy hujjatlar</h1>
+      <h1>Prezidentning farmon, qaror va farmoyishlari</h1>
       <div className="row">
         <div className="col">
           <div className="desc">
