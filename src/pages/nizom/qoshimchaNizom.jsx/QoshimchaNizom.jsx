@@ -1,11 +1,11 @@
 import React from "react";
-import medic from "../../assets/images/medic.png";
-import "./home.scss";
+import medic from "../../../assets/images/medic.png";
+import "./qoshimchaNizom.scss";
 
-function MeyoriyHujjatlar() {
+function QoshimchaNizom() {
   return (
-    <div className="MeyoriyHujjatlar container">
-      <h1>Faoliyatga oid me’yoriy hujjatlar</h1>
+    <div className="qoshimchaNizom container">
+      <h1>Qo’shimcha nizomlar</h1>
       <div className="row">
         <div className="col">
           <div className="desc">
@@ -72,4 +72,4 @@ function MeyoriyHujjatlar() {
   );
 }
 
-export default MeyoriyHujjatlar;
+export default QoshimchaNizom;

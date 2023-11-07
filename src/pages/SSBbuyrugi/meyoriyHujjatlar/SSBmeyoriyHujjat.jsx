@@ -1,10 +1,11 @@
 import React from "react";
-import medic from "../../assets/images/medic.png";
-import "./home.scss";
+import "./SSBmeyoriyHujjat.scss";
 
-function MeyoriyHujjatlar() {
+import medic from "../../../assets/images/medic.png";
+
+function SSBmeyoriyHujjat() {
   return (
-    <div className="MeyoriyHujjatlar container">
+    <div className="SSBMeyoriyHujjatlar container">
       <h1>Faoliyatga oid me’yoriy hujjatlar</h1>
       <div className="row">
         <div className="col">
@@ -72,4 +73,4 @@ function MeyoriyHujjatlar() {
   );
 }
 
-export default MeyoriyHujjatlar;
+export default SSBmeyoriyHujjat;

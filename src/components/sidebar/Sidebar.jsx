@@ -31,13 +31,13 @@ function Sidebar() {
           </NavLink>
         </li>
         <li>
-          <NavLink>
+          <NavLink to="/SSB-buyrugi">
             {" "}
             <img src={menuChild} /> <p>SSB buyrug‘i</p>
           </NavLink>
         </li>
         <li>
-          <NavLink>
+          <NavLink to="/Nizom">
             {" "}
             <img src={menuChild} /> <p>Nizom</p>
           </NavLink>

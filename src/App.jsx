@@ -4,6 +4,8 @@ import BoshSahifa from "./pages/BoshSahifa";
 import Home from "./pages/home/Home";
 import UmumiyMalumot from "./pages/umumiyMalumot/UmumiyMalumot";
 import FaoliyatgaOidMeyoriyHujjat from "./pages/faoliyatgaOidMeyoriyHujjat/FaoliyatgaOidMeyoriyHujjat";
+import SSBbuyrugi from "./pages/SSBbuyrugi/SSBbuyrugi";
+import Nizom from "./pages/nizom/Nizom";
 
 function App() {
   const routes = createBrowserRouter([
@@ -21,8 +23,16 @@ function App() {
         },
         {
           path: "Faoliyatga-oid-meyoriy-hujjatlar",
-          element: <FaoliyatgaOidMeyoriyHujjat/>
-        }
+          element: <FaoliyatgaOidMeyoriyHujjat />,
+        },
+        {
+          path: "SSB-buyrugi",
+          element: <SSBbuyrugi />,
+        },
+        {
+          path: "Nizom",
+          element: <Nizom />,
+        },
       ],
     },
   ]);

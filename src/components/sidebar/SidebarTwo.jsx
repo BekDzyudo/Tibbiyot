@@ -38,7 +38,7 @@ function SidebarTwo() {
           </NavLink>
         </li>
         <li>
-          <NavLink>
+          <NavLink to="/SSB-buyrugi">
             {" "}
             <img src={menuChild} /> <p>SSB buyrug‘i</p>
           </NavLink>
@@ -51,7 +51,7 @@ function SidebarTwo() {
           </NavLink>
         </li>
         <li>
-          <NavLink>
+          <NavLink to="/Nizom">
             {" "}
             <img src={menuChild} /> <p>Nizom</p>
           </NavLink>

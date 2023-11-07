@@ -67,7 +67,7 @@
         object-fit: cover;
       }
     }
-    .sidebarBlok{
+    .sidebarBlok {
       width: 30%;
     }
   }
@@ -272,6 +272,7 @@
     }
   }
   .MeyoriyHujjatlar {
+    border: 1px solid red;
     margin-top: 50px;
     margin-bottom: 100px;
     h1 {
@@ -326,6 +327,7 @@
               color: white;
             }
           }
+
           p {
             margin: 0;
             display: flex;

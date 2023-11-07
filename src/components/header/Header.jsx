@@ -104,10 +104,10 @@ function Header() {
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink>SSB buyrug‘i</NavLink>
+                  <NavLink to="/SSB-buyrugi">SSB buyrug‘i</NavLink>
                 </li>
                 <li>
-                  <NavLink>Nizom</NavLink>
+                  <NavLink to="/Nizom">Nizom</NavLink>
                 </li>
                 <li>
                   <NavLink>Markaz ustavi</NavLink>
