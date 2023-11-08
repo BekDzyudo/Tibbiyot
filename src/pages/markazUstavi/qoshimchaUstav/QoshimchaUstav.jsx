@@ -1,11 +1,13 @@
 import React from "react";
-import medic from "../../assets/images/medic.png";
-import "./home.scss";
+// scss
+import "./qoshimchaUstav.scss";
+// img
+import medic from "../../../assets/images/medic.png";
 
-function MeyoriyHujjatlar() {
+function QoshimchaUstav() {
   return (
-    <div className="MeyoriyHujjatlar container">
-      <h1>Faoliyatga oid me’yoriy hujjatlar</h1>
+    <div className="qoshimchaUstav container">
+      <h1>Qo’shimcha ustav</h1>
       <div className="row">
         <div className="col">
           <div className="desc">
@@ -14,7 +16,7 @@ function MeyoriyHujjatlar() {
               “O’zbekiston...
             </h3>
             <button className="download">
-              <i className="fa fa-download" aria-hidden="true"></i>{" "}
+              <i class="fa fa-download" aria-hidden="true"></i>{" "}
               <span>Yuklab olish</span>
             </button>
             <p>
@@ -32,7 +34,7 @@ function MeyoriyHujjatlar() {
               ...
             </h3>
             <button className="download">
-              <i className="fa fa-download" aria-hidden="true"></i>{" "}
+              <i class="fa fa-download" aria-hidden="true"></i>{" "}
               <span>Yuklab olish</span>
             </button>
             <p>
@@ -50,7 +52,7 @@ function MeyoriyHujjatlar() {
               muassasalari ...
             </h3>
             <button className="download">
-              <i className="fa fa-download" aria-hidden="true"></i>{" "}
+              <i class="fa fa-download" aria-hidden="true"></i>{" "}
               <span>Yuklab olish</span>
             </button>
             <p>
@@ -65,11 +67,11 @@ function MeyoriyHujjatlar() {
           <i class="fa fa-arrow-right" aria-hidden="true"></i>
         </div>
         <div className="back">
-          <i className="fa fa-arrow-left" aria-hidden="true"></i>
+          <i class="fa fa-arrow-left" aria-hidden="true"></i>
         </div>
       </div>
     </div>
   );
 }
 
-export default MeyoriyHujjatlar;
+export default QoshimchaUstav;

@@ -25,7 +25,7 @@ function SSBbuyrugi() {
                 <span>Yuklab olish</span>
               </button>
               <p>
-                <span>18:00</span> <span>05 noyabr</span>
+                <span>18:00</span> <span>05z noyabr</span>
               </p>
             </div>
             <div className="cardss">

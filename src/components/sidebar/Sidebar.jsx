@@ -43,7 +43,7 @@ function Sidebar() {
           </NavLink>
         </li>
         <li>
-          <NavLink>
+          <NavLink to="/Markaz-ustavi">
             {" "}
             <img src={menuChild} />
             <p> Markaz ustavi</p>

@@ -14,11 +14,11 @@ function KursAmalgaOshish() {
           </h1>
           {/* accardion */}
 
-          <div class="accordion accordion-flush" id="accordionFlushExample">
-            <div class="accordion-item">
-              <h2 class="accordion-header">
+          <div className="accordion accordion-flush" id="accordionFlushExample">
+            <div className="accordion-item">
+              <h2 className="accordion-header">
                 <button
-                  class="accordion-button collapsed"
+                  className="accordion-button collapsed"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#flush-collapseOne"
@@ -30,10 +30,10 @@ function KursAmalgaOshish() {
               </h2>
               <div
                 id="flush-collapseOne"
-                class="accordion-collapse collapse"
+                className="accordion-collapse collapse"
                 data-bs-parent="#accordionFlushExample"
               >
-                <div class="accordion-body">
+                <div className="accordion-body">
                   Leverage agile frameworks to provide a robust synopsis for
                   strategy foster collaborative thinking to further the overall
                   value proposition. Organically grow the holistic world view of
@@ -41,10 +41,10 @@ function KursAmalgaOshish() {
                 </div>
               </div>
             </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header">
+            <div className="accordion-item">
+              <h2 className="accordion-header">
                 <button
-                  class="accordion-button collapsed"
+                  className="accordion-button collapsed"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#flush-collapseTwo"
@@ -56,10 +56,10 @@ function KursAmalgaOshish() {
               </h2>
               <div
                 id="flush-collapseTwo"
-                class="accordion-collapse collapse"
+                className="accordion-collapse collapse"
                 data-bs-parent="#accordionFlushExample"
               >
-                <div class="accordion-body">
+                <div className="accordion-body">
                   Leverage agile frameworks to provide a robust synopsis for
                   strategy foster collaborative thinking to further the overall
                   value proposition. Organically grow the holistic world view of
@@ -67,10 +67,10 @@ function KursAmalgaOshish() {
                 </div>
               </div>
             </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header">
+            <div className="accordion-item">
+              <h2 className="accordion-header">
                 <button
-                  class="accordion-button collapsed"
+                  className="accordion-button collapsed"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#flush-collapseThree"
@@ -82,10 +82,10 @@ function KursAmalgaOshish() {
               </h2>
               <div
                 id="flush-collapseThree"
-                class="accordion-collapse collapse"
+                className="accordion-collapse collapse"
                 data-bs-parent="#accordionFlushExample"
               >
-                <div class="accordion-body">
+                <div className="accordion-body">
                   Leverage agile frameworks to provide a robust synopsis for
                   strategy foster collaborative thinking to further the overall
                   value proposition. Organically grow the holistic world view of
@@ -93,10 +93,10 @@ function KursAmalgaOshish() {
                 </div>
               </div>
             </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header">
+            <div className="accordion-item">
+              <h2 className="accordion-header">
                 <button
-                  class="accordion-button collapsed"
+                  className="accordion-button collapsed"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#flush-collapseFour"
@@ -108,10 +108,10 @@ function KursAmalgaOshish() {
               </h2>
               <div
                 id="flush-collapseFour"
-                class="accordion-collapse collapse"
+                className="accordion-collapse collapse"
                 data-bs-parent="#accordionFlushExample"
               >
-                <div class="accordion-body">
+                <div className="accordion-body">
                   Leverage agile frameworks to provide a robust synopsis for
                   strategy foster collaborative thinking to further the overall
                   value proposition. Organically grow the holistic world view of

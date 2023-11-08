@@ -110,7 +110,7 @@ function Header() {
                   <NavLink to="/Nizom">Nizom</NavLink>
                 </li>
                 <li>
-                  <NavLink>Markaz ustavi</NavLink>
+                  <NavLink to="/Markaz-ustavi">Markaz ustavi</NavLink>
                 </li>
               </ul>
             </li>
@@ -121,13 +121,13 @@ function Header() {
               </NavLink>
               <ul className="inner">
                 <li>
-                  <NavLink>Rahbariyat</NavLink>
+                  <NavLink to="/Rahbariyat">Rahbariyat</NavLink>
                 </li>
                 <li>
-                  <NavLink>Bo’limlar</NavLink>
+                  <NavLink to="/Bo'limlar">Bo’limlar</NavLink>
                 </li>
                 <li>
-                  <NavLink>Tarkibiy tuzilma</NavLink>
+                  <NavLink to="/Tarkibiy-tuzilma">Tarkibiy tuzilma</NavLink>
                 </li>
               </ul>
             </li>
@@ -138,13 +138,17 @@ function Header() {
               </NavLink>
               <ul className="inner">
                 <li>
-                  <NavLink>ОТМлар билан ҳамкорлик </NavLink>
+                  <NavLink to="/OTM-bilan-hamkorlik">
+                    ОТМлар билан ҳамкорлик{" "}
+                  </NavLink>
                 </li>
                 <li>
-                  <NavLink>Халқаро ҳамкорлик</NavLink>
+                  <NavLink to="/Xalqaro-hamkorlik">Халқаро ҳамкорлик</NavLink>
                 </li>
                 <li>
-                  <NavLink>Марказнинг молиявий фаолияти</NavLink>
+                  <NavLink to="/Markaz-Moliyaviy-Faoliyati">
+                    Марказнинг молиявий фаолияти
+                  </NavLink>
                 </li>
               </ul>
             </li>
