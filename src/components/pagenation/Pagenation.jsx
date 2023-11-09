@@ -1,7 +1,8 @@
 import React from "react";
 import "./pagenation.scss"
 
-function Pagenation() {
+function Pagenation(props) {
+  const {data} = props;
   return (
     <div className="pagenation container">
       <button>1</button>

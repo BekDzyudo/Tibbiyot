@@ -286,13 +286,14 @@
     }
     .row {
       display: flex;
+      width: 100%;
+      flex-wrap: wrap;
       justify-content: space-between;
       align-content: flex-start;
       column-gap: 24px;
-      position: relative;
-      top: 0;
-      left: 0;
-      .col {
+      margin-bottom: 50px;
+      .cardss {
+        width: 32%;
         display: flex;
         column-gap: 20px;
         border-radius: 12px;
@@ -348,40 +349,6 @@
             width: 100%;
             object-fit: cover;
           }
-        }
-      }
-      .next {
-        position: absolute;
-        top: 40%;
-        right: -22px;
-        border-radius: 50%;
-        width: 42px;
-        background-color: #003066;
-        color: white;
-        padding: 12px 0px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
-        &:hover {
-          background-color: #032348;
-        }
-      }
-      .back {
-        position: absolute;
-        left: -22px;
-        top: 40%;
-        border-radius: 50%;
-        width: 42px;
-        background-color: #003066;
-        color: white;
-        padding: 12px 0px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
-        &:hover {
-          background-color: #032348;
         }
       }
     }

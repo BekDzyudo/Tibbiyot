@@ -1,73 +1,43 @@
 import React from "react";
-import medic from "../../assets/images/medic.png";
 import "./home.scss";
+import Pagenation from "../../components/pagenation/Pagenation";
+import { useState } from "react";
+import { useEffect } from "react";
 
 function MeyoriyHujjatlar() {
+  const [hujjats, setHujjats] = useState([]);
+
+  useEffect(() => {
+    fetch("https://jsonplaceholder.typicode.com/photos")
+      .then((res) => res.json())
+      .then((data) => setHujjats(data));
+  }, []);
+
   return (
     <div className="MeyoriyHujjatlar container">
       <h1>Faoliyatga oid me’yoriy hujjatlar</h1>
       <div className="row">
-        <div className="col">
-          <div className="desc">
-            <h3>
-              O’zbekiston Respublikasi Prezidentining 2022 yil 30 dekabrdagi
-              “O’zbekiston...
-            </h3>
-            <button className="download">
-              <i className="fa fa-download" aria-hidden="true"></i>{" "}
-              <span>Yuklab olish</span>
-            </button>
-            <p>
-              <span>18:00</span> <span>05 noyabr</span>
-            </p>
-          </div>
-          <div className="img">
-            <img src={medic} />
-          </div>
-        </div>
-        <div className="col">
-          <div className="desc">
-            <h3>
-              Innovatsion sog‘liqni saqlash milliy palatasi raisining 2022 yil
-              ...
-            </h3>
-            <button className="download">
-              <i className="fa fa-download" aria-hidden="true"></i>{" "}
-              <span>Yuklab olish</span>
-            </button>
-            <p>
-              <span>18:00</span> <span>05 noyabr</span>
-            </p>
-          </div>
-          <div className="img">
-            <img src={medic} />
-          </div>
-        </div>
-        <div className="col">
-          <div className="desc">
-            <h3>
-              Sog’liqni saqlash vazirligi tasarrufidagi tibbiyot oliy ta’lim
-              muassasalari ...
-            </h3>
-            <button className="download">
-              <i className="fa fa-download" aria-hidden="true"></i>{" "}
-              <span>Yuklab olish</span>
-            </button>
-            <p>
-              <span>18:00</span> <span>05 noyabr</span>
-            </p>
-          </div>
-          <div className="img">
-            <img src={medic} />
-          </div>
-        </div>
-        <div className="next">
-          <i className="fa fa-arrow-right" aria-hidden="true"></i>
-        </div>
-        <div className="back">
-          <i className="fa fa-arrow-left" aria-hidden="true"></i>
-        </div>
+        {hujjats.map((hujjat) => {
+          return (
+            <div key={hujjat.id} className="cardss">
+              <div className="desc">
+                <h3>{hujjat.title}</h3>
+                <button className="download">
+                  <i className="fa fa-download" aria-hidden="true"></i>{" "}
+                  <span>Yuklab olish</span>
+                </button>
+                <p>
+                  <span>18:00</span> <span>05 noyabr</span>
+                </p>
+              </div>
+              <div className="img">
+                <img src={hujjat.url} />
+              </div>
+            </div>
+          );
+        })}
       </div>
+      <Pagenation data={hujjats} />
     </div>
   );
 }
