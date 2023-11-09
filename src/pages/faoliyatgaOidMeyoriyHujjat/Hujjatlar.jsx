@@ -6,97 +6,43 @@ import kalendar from "../../assets/icons/kalendar.svg";
 import SidebarTwo from "../../components/sidebar/SidebarTwo";
 import OqXalat from "../umumiyMalumot/components/OqXalat";
 import SmallContact from "../umumiyMalumot/components/SmallContact";
-import Pagenation from "../../components/pagenation/Pagenation";
+import usePagenation from "../../components/pagenation/usePagenation";
 
 function Hujjatlar() {
+  const url = "https://jsonplaceholder.typicode.com/posts";
+  const { pagenation, currentItems } = usePagenation(url);
   return (
     <div className="hujjat">
       <div className="desc">
         <h1 className="title">FAOLIYATGA OID ME’YORIY HUJJATLAR</h1>
         <div className="row">
-          <div className="cards">
-            <div className="imgBlok">
-              <img src={image} />
-            </div>
-            <div className="calendar">
-              <img src={kalendar} />
-              <h1>08</h1>
-              <p>March</p>
-            </div>
-            <div className="description">
-              <h1>
-                Барча ишлаб чиқарувчи ва етказиб берувчи хўжалик юритувчи
-                субъектларга
-              </h1>
-              <p>
-                Ўзбекистон Республикаси Президентининг 09 август .2022 йилдаги
-                №ПҚ-348-сонли
-              </p>
-              <ol>
-                <li>Ilova 1</li>
-                <li>Ilova 1</li>
-                <li>Ilova 1</li>
-                <li>Ilova 1</li>
-                <li>Ilova 1</li>
-              </ol>
-            </div>
-          </div>
-          <div className="cards">
-            <div className="imgBlok">
-              <img src={image} />
-            </div>
-            <div className="calendar">
-              <img src={kalendar} />
-              <h1>08</h1>
-              <p>March</p>
-            </div>
-            <div className="description">
-              <h1>
-                Барча ишлаб чиқарувчи ва етказиб берувчи хўжалик юритувчи
-                субъектларга
-              </h1>
-              <p>
-                Ўзбекистон Республикаси Президентининг 09 август .2022 йилдаги
-                №ПҚ-348-сонли
-              </p>
-              <ol>
-                <li>Ilova 1</li>
-                <li>Ilova 1</li>
-                <li>Ilova 1</li>
-                <li>Ilova 1</li>
-                <li>Ilova 1</li>
-              </ol>
-            </div>
-          </div>
-          <div className="cards">
-            <div className="imgBlok">
-              <img src={image} />
-            </div>
-            <div className="calendar">
-              <img src={kalendar} />
-              <h1>08</h1>
-              <p>March</p>
-            </div>
-            <div className="description">
-              <h1>
-                Барча ишлаб чиқарувчи ва етказиб берувчи хўжалик юритувчи
-                субъектларга
-              </h1>
-              <p>
-                Ўзбекистон Республикаси Президентининг 09 август .2022 йилдаги
-                №ПҚ-348-сонли
-              </p>
-              <ol type="disc">
-                <li>Ilova 1</li>
-                <li>Ilova 1</li>
-                <li>Ilova 1</li>
-                <li>Ilova 1</li>
-                <li>Ilova 1</li>
-              </ol>
-            </div>
-          </div>
+          {currentItems.map((hujjat) => {
+            return (
+              <div key={hujjat.id} className="cards">
+                <div className="imgBlok">
+                  <img src={image} />
+                </div>
+                <div className="calendar">
+                  <img src={kalendar} />
+                  <h1>08</h1>
+                  <p>March</p>
+                </div>
+                <div className="description">
+                  <h1>{hujjat.title}</h1>
+                  <p>{hujjat.body}</p>
+                  <ol>
+                    <li>Ilova 1</li>
+                    <li>Ilova 1</li>
+                    <li>Ilova 1</li>
+                    <li>Ilova 1</li>
+                    <li>Ilova 1</li>
+                  </ol>
+                </div>
+              </div>
+            );
+          })}
         </div>
-        <Pagenation />
+        {pagenation}
       </div>
       <div className="layout">
         <SidebarTwo />

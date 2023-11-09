@@ -1,23 +1,18 @@
 import React from "react";
+// scss
 import "./home.scss";
-import Pagenation from "../../components/pagenation/Pagenation";
-import { useState } from "react";
-import { useEffect } from "react";
+// components
+import usePagenation from "../../components/pagenation/usePagenation";
 
 function MeyoriyHujjatlar() {
-  const [hujjats, setHujjats] = useState([]);
-
-  useEffect(() => {
-    fetch("https://jsonplaceholder.typicode.com/photos")
-      .then((res) => res.json())
-      .then((data) => setHujjats(data));
-  }, []);
+  const url = "https://jsonplaceholder.typicode.com/photos";
+  const { pagenation, currentItems } = usePagenation(url);
 
   return (
     <div className="MeyoriyHujjatlar container">
       <h1>Faoliyatga oid me’yoriy hujjatlar</h1>
       <div className="row">
-        {hujjats.map((hujjat) => {
+        {currentItems.map((hujjat) => {
           return (
             <div key={hujjat.id} className="cardss">
               <div className="desc">
@@ -37,7 +32,7 @@ function MeyoriyHujjatlar() {
           );
         })}
       </div>
-      <Pagenation data={hujjats} />
+      {pagenation}
     </div>
   );
 }
