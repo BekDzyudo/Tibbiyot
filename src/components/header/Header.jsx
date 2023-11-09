@@ -27,10 +27,10 @@ function Header() {
               <NavLink>Xizmatlar</NavLink>
             </li>
             <li>
-              <NavLink>Biz haqimizda</NavLink>
+              <NavLink to="/Umumiy-malumot">Biz haqimizda</NavLink>
             </li>
             <li>
-              <NavLink>Yangiliklar va e’lonlar</NavLink>
+              <NavLink to="/OTM-yangiliklari">Yangiliklar va e’lonlar</NavLink>
             </li>
             <li>
               <NavLink>Biz bilan bog‘lanish</NavLink>
@@ -44,12 +44,6 @@ function Header() {
                 <option value="en">Inglizcha</option>
               </select>
             </form>
-            {/* <li>
-              <NavLink>O'zbekcha</NavLink>
-            </li> */}
-            <li>
-              <NavLink>Maxsus imkoniyatlar</NavLink>
-            </li>
           </ul>
         </div>
       </div>
@@ -66,31 +60,23 @@ function Header() {
         <div className="centerBottomNavbar">
           <ul className="callNavbar">
             <li>
-              <NavLink>
-                <img src={gmail} />
-                <p>tibbiy ta’lim@gmail.com</p>
-              </NavLink>
+              <img src={gmail} />
+              <p>tibbiy ta’lim@gmail.com</p>
             </li>
             <li>
-              <NavLink>
-                <img src={phone} />
-                <p>+ 000 12 345-67-89</p>
-              </NavLink>
+              <img src={phone} />
+              <p>+ 000 12 345-67-89</p>
             </li>
             <li>
-              <NavLink>
-                <img src={phone} /> <p>1003</p>
-              </NavLink>
+              <img src={phone} /> <p>1003</p>
             </li>
-            <li>
-              <NavLink className="login">
-                <img src={login} alt="Kirish" /> Kirish
-              </NavLink>
+            <li className="login">
+              <img src={login} alt="Kirish" /> <p>Kirish</p>
             </li>
           </ul>
           <ul className="dropdownNavbar">
             <li className="liDropLink1">
-              <NavLink className="dropLink">
+              <NavLink to="/Umumiy-malumot" className="dropLink">
                 <p>MARKAZ HAQIDA</p>{" "}
                 <i class="fa fa-angle-down" aria-hidden="true"></i>
               </NavLink>
@@ -115,7 +101,7 @@ function Header() {
               </ul>
             </li>
             <li className="liDropLink2">
-              <NavLink className="dropLink">
+              <NavLink to="/Rahbariyat" className="dropLink">
                 <p>MARKAZ TUZILMASI</p>{" "}
                 <i class="fa fa-angle-down" aria-hidden="true"></i>
               </NavLink>
@@ -132,7 +118,7 @@ function Header() {
               </ul>
             </li>
             <li className="liDropLink3">
-              <NavLink className="dropLink">
+              <NavLink to="/OTM-bilan-hamkorlik" className="dropLink">
                 <p>FAOLIYAT</p>{" "}
                 <i class="fa fa-angle-down" aria-hidden="true"></i>
               </NavLink>
@@ -153,19 +139,20 @@ function Header() {
               </ul>
             </li>
             <li className="liDropLink4">
-              <NavLink className="dropLink">
+              <NavLink to="/OTM-yangiliklari" className="dropLink">
                 <p>YANGILIKLAR</p>{" "}
                 <i class="fa fa-angle-down" aria-hidden="true"></i>
               </NavLink>
               <ul className="inner">
                 <li>
-                  <NavLink>ОТМлар билан ҳамкорлик </NavLink>
+                  <NavLink to="/OTM-yangiliklari">
+                    Oliy ta’limga oid yangiliklar{" "}
+                  </NavLink>
                 </li>
                 <li>
-                  <NavLink>Халқаро ҳамкорлик</NavLink>
-                </li>
-                <li>
-                  <NavLink>Марказнинг молиявий фаолияти</NavLink>
+                  <NavLink to="/Yangi-adabiyotlar">
+                    OTMlar faoliyatiga oid yangi adabiyotlar
+                  </NavLink>
                 </li>
               </ul>
             </li>
@@ -174,17 +161,6 @@ function Header() {
                 <p>FANLAR BO‘YICHA O‘QUV RESURSLAR</p>{" "}
                 <i class="fa fa-angle-down" aria-hidden="true"></i>
               </NavLink>
-              <ul className="inner">
-                <li>
-                  <NavLink>ОТМлар билан ҳамкорлик </NavLink>
-                </li>
-                <li>
-                  <NavLink>Халқаро ҳамкорлик</NavLink>
-                </li>
-                <li>
-                  <NavLink>Марказнинг молиявий фаолияти</NavLink>
-                </li>
-              </ul>
             </li>
           </ul>
         </div>

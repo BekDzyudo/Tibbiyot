@@ -62,12 +62,6 @@ function SSBmeyoriyHujjat() {
             <img src={medic} />
           </div>
         </div>
-        <div className="next">
-          <i class="fa fa-arrow-right" aria-hidden="true"></i>
-        </div>
-        <div className="back">
-          <i class="fa fa-arrow-left" aria-hidden="true"></i>
-        </div>
       </div>
     </div>
   );

@@ -112,8 +112,10 @@ header {
           border: 1px solid #045097;
           padding: 5px;
         }
+        .login{
+          cursor: pointer;
+        }
         li {
-          a {
             text-decoration: none;
             display: flex;
             justify-content: center;
@@ -133,7 +135,6 @@ header {
               padding: 0;
               margin: 0;
             }
-          }
         }
       }
       .dropdownNavbar {

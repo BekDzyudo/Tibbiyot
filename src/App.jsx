@@ -13,6 +13,8 @@ import TarkibiyTuzilma from "./pages/tarkibiyTuzilma/TarkibiyTuzilma";
 import OTMhamkorlik from "./pages/OTMhamkorlik/OTMhamkorlik";
 import XalqaroHamkorlik from "./pages/xalqaroHamkorlik/XalqaroHamkorlik";
 import MarkazMoliyaviyFaoliyati from "./pages/markazMoliyaviyFaoliyati/MarkazMoliyaviyFaoliyati";
+import YangiAdabiyotlar from "./pages/yangiAdabiyotlar/YangiAdabiyotlar";
+import OTMyangiliklar from "./pages/OTMyangiliklar/OTMyangiliklar";
 
 function App() {
   const routes = createBrowserRouter([
@@ -67,6 +69,14 @@ function App() {
         {
           path: "Markaz-Moliyaviy-Faoliyati",
           element: <MarkazMoliyaviyFaoliyati />,
+        },
+        {
+          path: "Yangi-adabiyotlar",
+          element: <YangiAdabiyotlar />,
+        },
+        {
+          path: "OTM-yangiliklari",
+          element: <OTMyangiliklar />,
         },
       ],
     },
