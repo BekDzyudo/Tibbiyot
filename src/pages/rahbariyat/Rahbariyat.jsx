@@ -72,7 +72,7 @@ function Rahbariyat() {
                   </p>
                 </p>
                 <button className="download">
-                  <i class="fa fa-arrow-down" aria-hidden="true"></i>
+                  <i className="fa fa-arrow-down" aria-hidden="true"></i>
                   <span>To’liq ma’lumot</span>
                 </button>
               </div>
@@ -128,7 +128,7 @@ function Rahbariyat() {
                   </p>
                 </p>
                 <button className="download">
-                  <i class="fa fa-arrow-down" aria-hidden="true"></i>
+                  <i className="fa fa-arrow-down" aria-hidden="true"></i>
                   <span>To’liq ma’lumot</span>
                 </button>
               </div>
@@ -184,7 +184,7 @@ function Rahbariyat() {
                   </p>
                 </p>
                 <button className="download">
-                  <i class="fa fa-arrow-down" aria-hidden="true"></i>
+                  <i className="fa fa-arrow-down" aria-hidden="true"></i>
                   <span>To’liq ma’lumot</span>
                 </button>
               </div>

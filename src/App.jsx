@@ -15,6 +15,7 @@ import XalqaroHamkorlik from "./pages/xalqaroHamkorlik/XalqaroHamkorlik";
 import MarkazMoliyaviyFaoliyati from "./pages/markazMoliyaviyFaoliyati/MarkazMoliyaviyFaoliyati";
 import YangiAdabiyotlar from "./pages/yangiAdabiyotlar/YangiAdabiyotlar";
 import OTMyangiliklar from "./pages/OTMyangiliklar/OTMyangiliklar";
+import NotFound from "./pages/notFound/NotFound";
 
 function App() {
   const routes = createBrowserRouter([
@@ -77,6 +78,10 @@ function App() {
         {
           path: "OTM-yangiliklari",
           element: <OTMyangiliklar />,
+        },
+        {
+          path: "*",
+          element: <NotFound />,
         },
       ],
     },

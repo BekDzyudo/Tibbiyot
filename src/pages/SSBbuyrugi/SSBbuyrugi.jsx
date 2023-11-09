@@ -21,7 +21,7 @@ function SSBbuyrugi() {
                 “O’zbekiston...
               </h3>
               <button className="download">
-                <i class="fa fa-download" aria-hidden="true"></i>{" "}
+                <i className="fa fa-download" aria-hidden="true"></i>{" "}
                 <span>Yuklab olish</span>
               </button>
               <p>
@@ -34,11 +34,11 @@ function SSBbuyrugi() {
                 “O’zbekiston...
               </h3>
               <button className="download">
-                <i class="fa fa-download" aria-hidden="true"></i>{" "}
+                <i className="fa fa-download" aria-hidden="true"></i>{" "}
                 <span>Yuklab olish</span>
               </button>
               <p>
-                <span>18:00</span> <span>05 noyabr</span>
+                <span>18:00</span> <span>05z noyabr</span>
               </p>
             </div>
             <div className="cardss">
@@ -47,11 +47,11 @@ function SSBbuyrugi() {
                 “O’zbekiston...
               </h3>
               <button className="download">
-                <i class="fa fa-download" aria-hidden="true"></i>{" "}
+                <i className="fa fa-download" aria-hidden="true"></i>{" "}
                 <span>Yuklab olish</span>
               </button>
               <p>
-                <span>18:00</span> <span>05 noyabr</span>
+                <span>18:00</span> <span>05z noyabr</span>
               </p>
             </div>
             <div className="cardss">
@@ -60,11 +60,11 @@ function SSBbuyrugi() {
                 “O’zbekiston...
               </h3>
               <button className="download">
-                <i class="fa fa-download" aria-hidden="true"></i>{" "}
+                <i className="fa fa-download" aria-hidden="true"></i>{" "}
                 <span>Yuklab olish</span>
               </button>
               <p>
-                <span>18:00</span> <span>05 noyabr</span>
+                <span>18:00</span> <span>05z noyabr</span>
               </p>
             </div>
             <div className="cardss">
@@ -73,11 +73,11 @@ function SSBbuyrugi() {
                 “O’zbekiston...
               </h3>
               <button className="download">
-                <i class="fa fa-download" aria-hidden="true"></i>{" "}
+                <i className="fa fa-download" aria-hidden="true"></i>{" "}
                 <span>Yuklab olish</span>
               </button>
               <p>
-                <span>18:00</span> <span>05 noyabr</span>
+                <span>18:00</span> <span>05z noyabr</span>
               </p>
             </div>
             <div className="cardss">
@@ -86,11 +86,11 @@ function SSBbuyrugi() {
                 “O’zbekiston...
               </h3>
               <button className="download">
-                <i class="fa fa-download" aria-hidden="true"></i>{" "}
+                <i className="fa fa-download" aria-hidden="true"></i>{" "}
                 <span>Yuklab olish</span>
               </button>
               <p>
-                <span>18:00</span> <span>05 noyabr</span>
+                <span>18:00</span> <span>05z noyabr</span>
               </p>
             </div>
             <div className="cardss">
@@ -99,11 +99,11 @@ function SSBbuyrugi() {
                 “O’zbekiston...
               </h3>
               <button className="download">
-                <i class="fa fa-download" aria-hidden="true"></i>{" "}
+                <i className="fa fa-download" aria-hidden="true"></i>{" "}
                 <span>Yuklab olish</span>
               </button>
               <p>
-                <span>18:00</span> <span>05 noyabr</span>
+                <span>18:00</span> <span>05z noyabr</span>
               </p>
             </div>
             <div className="cardss">
@@ -112,11 +112,11 @@ function SSBbuyrugi() {
                 “O’zbekiston...
               </h3>
               <button className="download">
-                <i class="fa fa-download" aria-hidden="true"></i>{" "}
+                <i className="fa fa-download" aria-hidden="true"></i>{" "}
                 <span>Yuklab olish</span>
               </button>
               <p>
-                <span>18:00</span> <span>05 noyabr</span>
+                <span>18:00</span> <span>05z noyabr</span>
               </p>
             </div>
             <div className="cardss">
@@ -125,11 +125,11 @@ function SSBbuyrugi() {
                 “O’zbekiston...
               </h3>
               <button className="download">
-                <i class="fa fa-download" aria-hidden="true"></i>{" "}
+                <i className="fa fa-download" aria-hidden="true"></i>{" "}
                 <span>Yuklab olish</span>
               </button>
               <p>
-                <span>18:00</span> <span>05 noyabr</span>
+                <span>18:00</span> <span>05z noyabr</span>
               </p>
             </div>
             <div className="cardss">
@@ -138,11 +138,11 @@ function SSBbuyrugi() {
                 “O’zbekiston...
               </h3>
               <button className="download">
-                <i class="fa fa-download" aria-hidden="true"></i>{" "}
+                <i className="fa fa-download" aria-hidden="true"></i>{" "}
                 <span>Yuklab olish</span>
               </button>
               <p>
-                <span>18:00</span> <span>05 noyabr</span>
+                <span>18:00</span> <span>05z noyabr</span>
               </p>
             </div>
             <div className="cardss">
@@ -151,11 +151,11 @@ function SSBbuyrugi() {
                 “O’zbekiston...
               </h3>
               <button className="download">
-                <i class="fa fa-download" aria-hidden="true"></i>{" "}
+                <i className="fa fa-download" aria-hidden="true"></i>{" "}
                 <span>Yuklab olish</span>
               </button>
               <p>
-                <span>18:00</span> <span>05 noyabr</span>
+                <span>18:00</span> <span>05z noyabr</span>
               </p>
             </div>
             <div className="cardss">
@@ -164,11 +164,11 @@ function SSBbuyrugi() {
                 “O’zbekiston...
               </h3>
               <button className="download">
-                <i class="fa fa-download" aria-hidden="true"></i>{" "}
+                <i className="fa fa-download" aria-hidden="true"></i>{" "}
                 <span>Yuklab olish</span>
               </button>
               <p>
-                <span>18:00</span> <span>05 noyabr</span>
+                <span>18:00</span> <span>05z noyabr</span>
               </p>
             </div>
           </div>

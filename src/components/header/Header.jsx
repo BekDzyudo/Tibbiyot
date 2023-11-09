@@ -78,7 +78,7 @@ function Header() {
             <li className="liDropLink1">
               <NavLink to="/Umumiy-malumot" className="dropLink">
                 <p>MARKAZ HAQIDA</p>{" "}
-                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                <i className="fa fa-angle-down" aria-hidden="true"></i>
               </NavLink>
               <ul className="inner">
                 <li>
@@ -103,7 +103,7 @@ function Header() {
             <li className="liDropLink2">
               <NavLink to="/Rahbariyat" className="dropLink">
                 <p>MARKAZ TUZILMASI</p>{" "}
-                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                <i className="fa fa-angle-down" aria-hidden="true"></i>
               </NavLink>
               <ul className="inner">
                 <li>
@@ -120,7 +120,7 @@ function Header() {
             <li className="liDropLink3">
               <NavLink to="/OTM-bilan-hamkorlik" className="dropLink">
                 <p>FAOLIYAT</p>{" "}
-                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                <i className="fa fa-angle-down" aria-hidden="true"></i>
               </NavLink>
               <ul className="inner">
                 <li>
@@ -141,7 +141,7 @@ function Header() {
             <li className="liDropLink4">
               <NavLink to="/OTM-yangiliklari" className="dropLink">
                 <p>YANGILIKLAR</p>{" "}
-                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                <i className="fa fa-angle-down" aria-hidden="true"></i>
               </NavLink>
               <ul className="inner">
                 <li>
@@ -159,7 +159,7 @@ function Header() {
             <li className="liDropLink5">
               <NavLink className="dropLink">
                 <p>FANLAR BO‘YICHA O‘QUV RESURSLAR</p>{" "}
-                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                <i className="fa fa-angle-down" aria-hidden="true"></i>
               </NavLink>
             </li>
           </ul>

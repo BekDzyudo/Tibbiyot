@@ -14,7 +14,7 @@ function MarkazUstavi() {
           <h1 className="title">MARKAZ USTAVI</h1>
           <div className="downloadBtn">
             <button className="download">
-              <i class="fa fa-download" aria-hidden="true"></i>{" "}
+              <i className="fa fa-download" aria-hidden="true"></i>{" "}
               <span>Yuklab olish</span>
             </button>
           </div>

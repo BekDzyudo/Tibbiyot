@@ -62,7 +62,7 @@ function MeyoriyHujjatlar() {
           </div>
         </div>
         <div className="next">
-          <i class="fa fa-arrow-right" aria-hidden="true"></i>
+          <i className="fa fa-arrow-right" aria-hidden="true"></i>
         </div>
         <div className="back">
           <i className="fa fa-arrow-left" aria-hidden="true"></i>
