@@ -1,68 +1,35 @@
 import React from "react";
 import "./SSBmeyoriyHujjat.scss";
-
-import medic from "../../../assets/images/medic.png";
+import usePagenation from "../../../components/pagenation/usePagenation";
 
 function SSBmeyoriyHujjat() {
+  const url = "https://jsonplaceholder.typicode.com/photos";
+  const { pagenation, currentItems } = usePagenation(url, 3);
   return (
     <div className="SSBMeyoriyHujjatlar container">
-      <h1>Faoliyatga oid me’yoriy hujjatlar</h1>
       <div className="row">
-        <div className="col">
-          <div className="desc">
-            <h3>
-              O’zbekiston Respublikasi Prezidentining 2022 yil 30 dekabrdagi
-              “O’zbekiston...
-            </h3>
-            <button className="download">
-              <i class="fa fa-download" aria-hidden="true"></i>{" "}
-              <span>Yuklab olish</span>
-            </button>
-            <p>
-              <span>18:00</span> <span>05 noyabr</span>
-            </p>
-          </div>
-          <div className="img">
-            <img src={medic} />
-          </div>
-        </div>
-        <div className="col">
-          <div className="desc">
-            <h3>
-              Innovatsion sog‘liqni saqlash milliy palatasi raisining 2022 yil
-              ...
-            </h3>
-            <button className="download">
-              <i class="fa fa-download" aria-hidden="true"></i>{" "}
-              <span>Yuklab olish</span>
-            </button>
-            <p>
-              <span>18:00</span> <span>05 noyabr</span>
-            </p>
-          </div>
-          <div className="img">
-            <img src={medic} />
-          </div>
-        </div>
-        <div className="col">
-          <div className="desc">
-            <h3>
-              Sog’liqni saqlash vazirligi tasarrufidagi tibbiyot oliy ta’lim
-              muassasalari ...
-            </h3>
-            <button className="download">
-              <i class="fa fa-download" aria-hidden="true"></i>{" "}
-              <span>Yuklab olish</span>
-            </button>
-            <p>
-              <span>18:00</span> <span>05 noyabr</span>
-            </p>
-          </div>
-          <div className="img">
-            <img src={medic} />
-          </div>
-        </div>
+        <h1>Faoliyatga oid me’yoriy hujjatlar</h1>
+        {currentItems.map((hujjat) => {
+          return (
+            <div key={hujjat.id} className="cardss">
+              <div className="desc">
+                <h3>{hujjat.title}</h3>
+                <button className="download">
+                  <i className="fa fa-download" aria-hidden="true"></i>{" "}
+                  <span>Yuklab olish</span>
+                </button>
+                <p>
+                  <span>18:00</span> <span>05 noyabr</span>
+                </p>
+              </div>
+              <div className="img">
+                <img src={hujjat.url} />
+              </div>
+            </div>
+          );
+        })}
       </div>
+      {pagenation}
     </div>
   );
 }

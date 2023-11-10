@@ -10,12 +10,12 @@ import usePagenation from "../../components/pagenation/usePagenation";
 
 function Hujjatlar() {
   const url = "https://jsonplaceholder.typicode.com/posts";
-  const { pagenation, currentItems } = usePagenation(url);
+  const { pagenation, currentItems } = usePagenation(url,4);
   return (
     <div className="hujjat">
       <div className="desc">
-        <h1 className="title">FAOLIYATGA OID ME’YORIY HUJJATLAR</h1>
         <div className="row">
+          <h1 className="title">FAOLIYATGA OID ME’YORIY HUJJATLAR</h1>
           {currentItems.map((hujjat) => {
             return (
               <div key={hujjat.id} className="cards">

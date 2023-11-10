@@ -201,7 +201,6 @@ function Rahbariyat() {
       </div>
       <hr style={{ marginBottom: "80px", marginTop: "30px" }} />
       <RahbariyatSlider />
-      <Pagenation />
       <hr style={{ marginBottom: "50px" }} />
     </div>
   );

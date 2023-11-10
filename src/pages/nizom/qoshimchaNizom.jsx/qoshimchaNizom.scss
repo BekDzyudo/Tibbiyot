@@ -1,25 +1,28 @@
 .qoshimchaNizom {
   margin-top: 50px;
   margin-bottom: 100px;
-  h1 {
-    color: var(--light-grayscale-dark-gray-1, #182026);
-    font-family: Inter;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 110%; /* 39.6px */
-    letter-spacing: 0.2px;
-    margin-bottom: 30px;
-  }
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   .row {
     display: flex;
     justify-content: space-between;
     align-content: flex-start;
     column-gap: 24px;
-    position: relative;
-    top: 0;
-    left: 0;
-    .col {
+    
+    h1 {
+      color: var(--light-grayscale-dark-gray-1, #182026);
+      font-family: Inter;
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 110%; /* 39.6px */
+      letter-spacing: 0.2px;
+      margin-bottom: 30px;
+    }
+    .cardss {
+      width: 32%;
       display: flex;
       column-gap: 20px;
       border-radius: 12px;

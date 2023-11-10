@@ -9,7 +9,7 @@ function FaoliyatgaOidMeyoriyHujjat() {
   return (
     <div className="faoliyatgaOidMeyoriyHujjat container">
       <Hujjatlar />
-      <hr style={{ marginBottom: "50px", marginTop: "50px" }} />
+      <hr style={{ marginBottom: "50px", marginTop: "100px" }} />
       <PrezidentFarmoni />
     </div>
   );
