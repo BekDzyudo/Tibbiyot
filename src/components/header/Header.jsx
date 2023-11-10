@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
-
+import { useTranslation } from "react-i18next";
 // images
 import logo from "../../assets/icons/logo.svg";
 import login from "../../assets/icons/Login.svg";
@@ -12,33 +12,37 @@ import gmail from "../../assets/icons/gmail.svg";
 import "./header.scss";
 
 function Header() {
+  const { i18n, t } = useTranslation();
+  function onLanguage(e) {
+    i18n.changeLanguage(e.target.value);
+  }
   return (
     <header>
       <div className="topNavbar">
         <div className="topLeftRightNavbarMenu container">
           <ul className="topLeftNavbarMenu">
             <li>
-              <NavLink to="/">Bosh sahifa</NavLink>
+              <NavLink to="/">{t("home")}</NavLink>
             </li>
             <li>
-              <NavLink>Kurslar</NavLink>
+              <NavLink>{t("courses")}</NavLink>
             </li>
             <li>
-              <NavLink>Xizmatlar</NavLink>
+              <NavLink>{t("services")}</NavLink>
             </li>
             <li>
-              <NavLink to="/Umumiy-malumot">Biz haqimizda</NavLink>
+              <NavLink to="/Umumiy-malumot">{t("about")}</NavLink>
             </li>
             <li>
-              <NavLink to="/OTM-yangiliklari">Yangiliklar va e’lonlar</NavLink>
+              <NavLink to="/OTM-yangiliklari">{t("news")}</NavLink>
             </li>
             <li>
-              <NavLink>Biz bilan bog‘lanish</NavLink>
+              <NavLink>{t("contact")}</NavLink>
             </li>
           </ul>
           <ul className="topRightNavbarMenu">
             <form>
-              <select>
+              <select onChange={onLanguage}>
                 <option value="uz">O'zbekcha</option>
                 <option value="ru">Ruscha</option>
                 <option value="en">Inglizcha</option>
