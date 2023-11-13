@@ -3,7 +3,7 @@ import ReactPaginate from "react-paginate";
 // scss
 import "./pagenation.scss";
 
-function usePagenation(url,itemsPerPage) {
+function usePagenation(url, itemsPerPage) {
   const [hujjats, setHujjats] = useState([]);
   const [currentItems, setCurrentItems] = useState([]);
   const [pageCount, setPageCount] = useState(0);
