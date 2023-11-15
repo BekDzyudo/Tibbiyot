@@ -1,16 +1,17 @@
 import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 
 export function useGetFetch(url) {
   const [data, setData] = useState(null);
   const [isPending, setIspending] = useState(false);
   const [error, setError] = useState(null);
-
+  const { i18n } = useTranslation();
   useEffect(() => {
     setIspending(true);
     fetch(url, {
       method: "GET",
       headers: {
-        "Accept-Language": "ru",
+        "Accept-Language": `${i18n.language}`,
       },
     })
       .then((res) => {
@@ -26,6 +27,6 @@ export function useGetFetch(url) {
         setError("Not found");
         setIspending(false);
       });
-  }, [url]);
+  }, [url, i18n.language]);
   return { data, isPending, error };
 }

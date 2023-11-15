@@ -44,8 +44,8 @@ function Header() {
             <form>
               <select onChange={onLanguage}>
                 <option value="uz">O'zbekcha</option>
-                <option value="ru">Ruscha</option>
-                <option value="en">Inglizcha</option>
+                <option value="ru">Русский</option>
+                <option value="en">English</option>
               </select>
             </form>
           </ul>

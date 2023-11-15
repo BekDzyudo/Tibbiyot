@@ -1,5 +1,3 @@
-// images
-import umumiyMalumot from "../../assets/images/umumiyM.png";
 // components
 import Sidebar from "../../components/sidebar/Sidebar";
 import OqXalat from "./components/OqXalat";
@@ -15,7 +13,7 @@ function Umumiy() {
       <div className="desc">
         <h1>UMUMIY MA’LUMOT</h1>
         {data && (
-          <div dangerouslySetInnerHTML={{ __html: data[0].description }}></div>
+          <div dangerouslySetInnerHTML={{ __html: data[0].title }}></div>
         )}
       </div>
       <div className="layout">
