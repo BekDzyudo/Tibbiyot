@@ -1,18 +1,31 @@
-import { useEffect, useState } from "react"
+import { useEffect, useState } from "react";
 
 export function useGetFetch(url) {
+  const [data, setData] = useState(null);
+  const [isPending, setIspending] = useState(false);
+  const [error, setError] = useState(null);
 
-    const [data, setData] = useState(null)
-
-    useEffect(()=>{
-        const fetchData = async () =>{
-            const req = await fetch(url)
-            const data = await req.json()
-            setData(data)
-        }
-        fetchData()
-    }, [url])
-  return {data}
+  useEffect(() => {
+    setIspending(true);
+    fetch(url, {
+      method: "GET",
+      headers: {
+        "Accept-Language": "ru",
+      },
+    })
+      .then((res) => {
+        if (!res.ok) throw new Error(res.status);
+        return res.json();
+      })
+      .then((data) => {
+        setData(data);
+        setIspending(false);
+      })
+      .catch((err) => {
+        console.log(err);
+        setError("Not found");
+        setIspending(false);
+      });
+  }, [url]);
+  return { data, isPending, error };
 }
-
-

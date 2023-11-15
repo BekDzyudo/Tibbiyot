@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 //
 import "./nizom.scss";
 //
@@ -6,12 +6,8 @@ import SidebarTwo from "../../components/sidebar/SidebarTwo";
 import OqXalat from "../umumiyMalumot/components/OqXalat";
 import SmallContact from "../umumiyMalumot/components/SmallContact";
 import QoshimchaNizom from "./qoshimchaNizom.jsx/QoshimchaNizom";
-import { useGetFetch } from "../../hooks/useGetFetch";
 
 function Nizom() {
-  const url = "https://jsonplaceholder.typicode.com/users";
-  const { data } = useGetFetch(url);
-  console.log(data);
   return (
     <div className="nizom container">
       <div className="content">

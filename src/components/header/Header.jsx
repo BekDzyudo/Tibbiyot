@@ -80,7 +80,7 @@ function Header() {
           </ul>
           <ul className="dropdownNavbar">
             <li className="liDropLink1">
-              <NavLink to="/Umumiy-malumot" className="dropLink">
+              <NavLink className="dropLink">
                 <p>MARKAZ HAQIDA</p>{" "}
                 <i className="fa fa-angle-down" aria-hidden="true"></i>
               </NavLink>
@@ -105,7 +105,7 @@ function Header() {
               </ul>
             </li>
             <li className="liDropLink2">
-              <NavLink to="/Rahbariyat" className="dropLink">
+              <NavLink className="dropLink">
                 <p>MARKAZ TUZILMASI</p>{" "}
                 <i className="fa fa-angle-down" aria-hidden="true"></i>
               </NavLink>
@@ -122,7 +122,7 @@ function Header() {
               </ul>
             </li>
             <li className="liDropLink3">
-              <NavLink to="/OTM-bilan-hamkorlik" className="dropLink">
+              <NavLink className="dropLink">
                 <p>FAOLIYAT</p>{" "}
                 <i className="fa fa-angle-down" aria-hidden="true"></i>
               </NavLink>
@@ -143,7 +143,7 @@ function Header() {
               </ul>
             </li>
             <li className="liDropLink4">
-              <NavLink to="/OTM-yangiliklari" className="dropLink">
+              <NavLink className="dropLink">
                 <p>YANGILIKLAR</p>{" "}
                 <i className="fa fa-angle-down" aria-hidden="true"></i>
               </NavLink>
