@@ -10,8 +10,10 @@ import inn from "../../assets/icons/in.svg";
 import twitter from "../../assets/icons/twitter.svg";
 import facebook from "../../assets/icons/facebook.svg";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 function Footer() {
+  const { t } = useTranslation();
   return (
     <footer className="footer">
       <div className="container footerTop">
@@ -37,18 +39,18 @@ function Footer() {
             </p>
           </div>
           <div className="col">
-            <Link to="/">Bosh sahifa</Link>
-            <Link>Markaz haqida</Link>
-            <Link>Markaz tuzilmasi</Link>
-            <Link>Faoliyat</Link>
-            <Link>Biz bilan bog‘lanish</Link>
+            <Link to="/">{t("home_page.footer.bosh_sahifa")}</Link>
+            <Link>{t("home_page.footer.markaz_haqida")}</Link>
+            <Link>{t("home_page.footer.markaz_tuzilmasi")}</Link>
+            <Link>{t("home_page.footer.faoliyat")}</Link>
+            <Link>{t("home_page.footer.contact")}</Link>
           </div>
           <div className="col">
-            <Link>Yangilik va e’lonlar</Link>
-            <Link>O‘quv qo‘llanmalar</Link>
-            <Link>O‘quv materiallari</Link>
-            <Link>Elektron resurslar</Link>
-            <Link>Video darslar</Link>
+            <Link>{t("home_page.footer.yangiliklar")}</Link>
+            <Link>{t("home_page.footer.oquv_qollanmalar")}</Link>
+            <Link>{t("home_page.footer.oquv_materiallari")}</Link>
+            <Link>{t("home_page.footer.elektron_resurslar")}</Link>
+            <Link>{t("home_page.footer.video_darslar")}</Link>
           </div>
           <div className="col">
             <form>
@@ -60,7 +62,7 @@ function Footer() {
             </form>
             <div className="logoshow">
               <button>
-                <Link>Jo’natish</Link>
+                <Link>{t("home_page.footer.junatishBtn")}</Link>
               </button>
               <Link>
                 <img src={inn} />
@@ -78,10 +80,7 @@ function Footer() {
       <hr />
       <div className="footerNextBottom">
         <div className="container">
-          <p>
-            2023. Барча ҳуқуқлар ҳимояланган. Сайтдан олинган барча маълумотлар
-            чоп этилганда веб-сайтга ҳавола қилиш мажбурий
-          </p>
+          <p>{t("home_page.footer.footer_protected")}</p>
         </div>
       </div>
     </footer>

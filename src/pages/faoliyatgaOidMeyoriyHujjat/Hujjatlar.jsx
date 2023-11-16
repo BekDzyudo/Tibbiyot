@@ -1,26 +1,29 @@
 import React from "react";
-// image
-import image from "../../assets/images/faoliyatImg.png";
 import kalendar from "../../assets/icons/kalendar.svg";
 //  component
 import SidebarTwo from "../../components/sidebar/SidebarTwo";
 import OqXalat from "../umumiyMalumot/components/OqXalat";
 import SmallContact from "../umumiyMalumot/components/SmallContact";
 import usePagenation from "../../components/pagenation/usePagenation";
+import { useGetFetch } from "../../hooks/useGetFetch";
 
 function Hujjatlar() {
-  const url = "https://jsonplaceholder.typicode.com/posts";
-  const { pagenation, currentItems } = usePagenation(url,4);
+  const url = "http://192.168.101.222:8000/meyoriy_hujjat";
+  const { data } = useGetFetch(url);
+  // const { pagenation, currentItems } = usePagenation(url, 4);
+  if (!data) {
+    return <p>null</p>;
+  }
   return (
     <div className="hujjat">
       <div className="desc">
         <div className="row">
           <h1 className="title">FAOLIYATGA OID ME’YORIY HUJJATLAR</h1>
-          {currentItems.map((hujjat) => {
+          {data.results.map((hujjat) => {
             return (
               <div key={hujjat.id} className="cards">
                 <div className="imgBlok">
-                  <img src={image} />
+                  <img src={kalendar} />
                 </div>
                 <div className="calendar">
                   <img src={kalendar} />
@@ -28,8 +31,8 @@ function Hujjatlar() {
                   <p>March</p>
                 </div>
                 <div className="description">
-                  <h1>{hujjat.title}</h1>
-                  <p>{hujjat.body}</p>
+                  <h1>{hujjat.id}</h1>
+                  <p>desc</p>
                   <ol>
                     <li>Ilova 1</li>
                     <li>Ilova 1</li>
@@ -42,7 +45,7 @@ function Hujjatlar() {
             );
           })}
         </div>
-        {pagenation}
+        {/* {pagenation} */}
       </div>
       <div className="layout">
         <SidebarTwo />

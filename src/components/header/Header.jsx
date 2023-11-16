@@ -22,22 +22,26 @@ function Header() {
         <div className="topLeftRightNavbarMenu container">
           <ul className="topLeftNavbarMenu">
             <li>
-              <NavLink to="/">{t("home")}</NavLink>
+              <NavLink to="/">{t("home_page.top_navbar.home")}</NavLink>
             </li>
             <li>
-              <NavLink>{t("courses")}</NavLink>
+              <NavLink>{t("home_page.top_navbar.about")}</NavLink>
             </li>
             <li>
-              <NavLink>{t("services")}</NavLink>
+              <NavLink>{t("home_page.top_navbar.courses")}</NavLink>
             </li>
             <li>
-              <NavLink to="/Umumiy-malumot">{t("about")}</NavLink>
+              <NavLink to="/Umumiy-malumot">
+                {t("home_page.top_navbar.services")}
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/OTM-yangiliklari">{t("news")}</NavLink>
+              <NavLink to="/OTM-yangiliklari">
+                {t("home_page.top_navbar.news")}
+              </NavLink>
             </li>
             <li>
-              <NavLink>{t("contact")}</NavLink>
+              <NavLink>{t("home_page.top_navbar.contact")}</NavLink>
             </li>
           </ul>
           <ul className="topRightNavbarMenu">
@@ -45,7 +49,6 @@ function Header() {
               <select onChange={onLanguage}>
                 <option value="uz">O'zbekcha</option>
                 <option value="ru">Русский</option>
-                <option value="en">English</option>
               </select>
             </form>
           </ul>
@@ -69,101 +72,120 @@ function Header() {
             </li>
             <li>
               <img src={phone} />
-              <p>+ 000 12 345-67-89</p>
+              <p>(71) 268-13-11</p>
             </li>
             <li>
               <img src={phone} /> <p>1003</p>
             </li>
             <li className="login">
-              <img src={login} alt="Kirish" /> <p>Kirish</p>
+              <img src={login} alt="Kirish" />{" "}
+              <p>{t("home_page.top_navbar.login")}</p>
             </li>
           </ul>
           <ul className="dropdownNavbar">
             <li className="liDropLink1">
               <NavLink className="dropLink">
-                <p>MARKAZ HAQIDA</p>{" "}
+                <p>{t("home_page.dropdownNavbar.markaz_haqida")}</p>{" "}
                 <i className="fa fa-angle-down" aria-hidden="true"></i>
               </NavLink>
               <ul className="inner">
                 <li>
-                  <NavLink to="/Umumiy-malumot">Umumiy ma’lumot</NavLink>
-                </li>
-                <li>
-                  <NavLink to="/Faoliyatga-oid-meyoriy-hujjatlar">
-                    Faoliyatga oid me’yoriy hujjatlar
+                  <NavLink to="/Umumiy-malumot">
+                    {t("home_page.dropdownNavbar.umumiy_malumot")}
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/SSB-buyrugi">SSB buyrug‘i</NavLink>
+                  <NavLink to="/Faoliyatga-oid-meyoriy-hujjatlar">
+                    {t(
+                      "home_page.dropdownNavbar.faoliyatgaOidMeyoriyHujjatlar"
+                    )}
+                  </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/Nizom">Nizom</NavLink>
+                  <NavLink to="/SSB-buyrugi">
+                    {" "}
+                    {t("home_page.dropdownNavbar.SSBBuyrugi")}
+                  </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/Markaz-ustavi">Markaz ustavi</NavLink>
+                  <NavLink to="/Nizom">
+                    {t("home_page.dropdownNavbar.nizom")}
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink to="/Markaz-ustavi">
+                    {t("home_page.dropdownNavbar.markaz_ustavi")}
+                  </NavLink>
                 </li>
               </ul>
             </li>
             <li className="liDropLink2">
               <NavLink className="dropLink">
-                <p>MARKAZ TUZILMASI</p>{" "}
+                <p>{t("home_page.dropdownNavbar.markaz_tuzilmasi")}</p>{" "}
                 <i className="fa fa-angle-down" aria-hidden="true"></i>
               </NavLink>
               <ul className="inner">
                 <li>
-                  <NavLink to="/Rahbariyat">Rahbariyat</NavLink>
+                  <NavLink to="/Rahbariyat">
+                    {t("home_page.dropdownNavbar.rahbariyat")}
+                  </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/Bo'limlar">Bo’limlar</NavLink>
+                  <NavLink to="/Bo'limlar">
+                    {t("home_page.dropdownNavbar.bolimlar")}
+                  </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/Tarkibiy-tuzilma">Tarkibiy tuzilma</NavLink>
+                  <NavLink to="/Tarkibiy-tuzilma">
+                    {t("home_page.dropdownNavbar.tarkibiy_tuzilma")}
+                  </NavLink>
                 </li>
               </ul>
             </li>
             <li className="liDropLink3">
               <NavLink className="dropLink">
-                <p>FAOLIYAT</p>{" "}
+                <p>{t("home_page.dropdownNavbar.faoliyat")}</p>{" "}
                 <i className="fa fa-angle-down" aria-hidden="true"></i>
               </NavLink>
               <ul className="inner">
                 <li>
                   <NavLink to="/OTM-bilan-hamkorlik">
-                    ОТМлар билан ҳамкорлик{" "}
+                    {t("home_page.dropdownNavbar.OTMxamkorlik")}{" "}
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/Xalqaro-hamkorlik">Халқаро ҳамкорлик</NavLink>
+                  <NavLink to="/Xalqaro-hamkorlik">
+                    {t("home_page.dropdownNavbar.xalqaroXamkorlik")}
+                  </NavLink>
                 </li>
                 <li>
                   <NavLink to="/Markaz-Moliyaviy-Faoliyati">
-                    Марказнинг молиявий фаолияти
+                    {t("home_page.dropdownNavbar.markaz_moliyaviy_faoliyat")}
                   </NavLink>
                 </li>
               </ul>
             </li>
             <li className="liDropLink4">
               <NavLink className="dropLink">
-                <p>YANGILIKLAR</p>{" "}
+                <p>{t("home_page.dropdownNavbar.yangiliklar")}</p>{" "}
                 <i className="fa fa-angle-down" aria-hidden="true"></i>
               </NavLink>
               <ul className="inner">
                 <li>
                   <NavLink to="/OTM-yangiliklari">
-                    Oliy ta’limga oid yangiliklar{" "}
+                    {t("home_page.dropdownNavbar.OTMyangiliklari")}{" "}
                   </NavLink>
                 </li>
                 <li>
                   <NavLink to="/Yangi-adabiyotlar">
-                    OTMlar faoliyatiga oid yangi adabiyotlar
+                    {t("home_page.dropdownNavbar.yangi_adabiyotlar")}
                   </NavLink>
                 </li>
               </ul>
             </li>
             <li className="liDropLink5">
               <NavLink className="dropLink">
-                <p>FANLAR BO‘YICHA O‘QUV RESURSLAR</p>{" "}
-                <i className="fa fa-angle-down" aria-hidden="true"></i>
+                <p>{t("home_page.dropdownNavbar.oquv_resurslar")}</p>
               </NavLink>
             </li>
           </ul>

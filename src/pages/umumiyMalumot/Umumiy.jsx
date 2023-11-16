@@ -8,13 +8,14 @@ function Umumiy() {
   const url = "http://192.168.101.222:8000/common_information";
   const { data, isPending, error } = useGetFetch(url);
 
+  if (data == null) {
+    return <p>null</p>;
+  }
   return (
     <div className="umumiy">
       <div className="desc">
         <h1>UMUMIY MA’LUMOT</h1>
-        {data && (
-          <div dangerouslySetInnerHTML={{ __html: data[0].title }}></div>
-        )}
+        <div dangerouslySetInnerHTML={{ __html: data[0].title }}></div>
       </div>
       <div className="layout">
         <Sidebar />

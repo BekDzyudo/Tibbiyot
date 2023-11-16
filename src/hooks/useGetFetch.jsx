@@ -6,6 +6,7 @@ export function useGetFetch(url) {
   const [isPending, setIspending] = useState(false);
   const [error, setError] = useState(null);
   const { i18n } = useTranslation();
+
   useEffect(() => {
     setIspending(true);
     fetch(url, {
@@ -23,7 +24,6 @@ export function useGetFetch(url) {
         setIspending(false);
       })
       .catch((err) => {
-        console.log(err);
         setError("Not found");
         setIspending(false);
       });
