@@ -10,10 +10,17 @@ function usePagenation(url, itemsPerPage) {
   const [itemOffset, setItemOffset] = useState(0);
 
   useEffect(() => {
+    let mounted = false;
     fetch(url)
       .then((res) => res.json())
-      .then((data) => setHujjats(data));
-  }, []);
+      .then((data) => {
+        if (mounted) {
+          setHujjats(data.results);
+          console.log(hujjats);
+        }
+      });
+      return () => (mounted = true);
+  }, [url]);
 
   useEffect(() => {
     const endOffset = itemOffset + itemsPerPage;

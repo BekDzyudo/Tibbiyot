@@ -10,7 +10,7 @@ function FaoliyatgaOidMeyoriyHujjat() {
     <div className="faoliyatgaOidMeyoriyHujjat container">
       <Hujjatlar />
       <hr style={{ marginBottom: "50px", marginTop: "100px" }} />
-      <PrezidentFarmoni />
+      {/* <PrezidentFarmoni /> */}
     </div>
   );
 }

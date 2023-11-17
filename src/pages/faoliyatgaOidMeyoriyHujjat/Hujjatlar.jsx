@@ -1,16 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import kalendar from "../../assets/icons/kalendar.svg";
 //  component
 import SidebarTwo from "../../components/sidebar/SidebarTwo";
 import OqXalat from "../umumiyMalumot/components/OqXalat";
 import SmallContact from "../umumiyMalumot/components/SmallContact";
-import usePagenation from "../../components/pagenation/usePagenation";
 import { useGetFetch } from "../../hooks/useGetFetch";
+import { Pagination } from "@mui/material";
+// ?page=1
 
 function Hujjatlar() {
-  const url = "http://192.168.101.222:8000/meyoriy_hujjat";
+  const [page, setPage] = useState(1);
+  function handlePagination(e, p) {
+    setPage(p);
+  }
+
+  const url = `http://192.168.101.222:8000/meyoriy_hujjat?page=${page}`;
   const { data } = useGetFetch(url);
-  // const { pagenation, currentItems } = usePagenation(url, 4);
+
   if (!data) {
     return <p>null</p>;
   }
@@ -45,7 +51,11 @@ function Hujjatlar() {
             );
           })}
         </div>
-        {/* {pagenation} */}
+        <Pagination
+          count={data.total_pages}
+          color="primary"
+          onChange={handlePagination}
+        ></Pagination>
       </div>
       <div className="layout">
         <SidebarTwo />

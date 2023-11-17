@@ -3,8 +3,8 @@ import "./prezidentFarmoni.scss";
 import usePagenation from "../../../components/pagenation/usePagenation";
 
 function PrezidentFarmoni() {
-  const url = "https://jsonplaceholder.typicode.com/photos";
-  const { pagenation, currentItems } = usePagenation(url,3);
+  // const url = "https://jsonplaceholder.typicode.com/photos";
+  // const { pagenation, currentItems } = usePagenation(url,3);
 
   return (
     <div className="prezidentFarmoni container">
