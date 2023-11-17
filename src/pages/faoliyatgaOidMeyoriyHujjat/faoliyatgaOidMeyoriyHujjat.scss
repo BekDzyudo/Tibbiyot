@@ -1,4 +1,5 @@
 .faoliyatgaOidMeyoriyHujjat{
+    margin-bottom: 100px;
     .hujjat{
         display: flex;
         column-gap: 50px;
@@ -10,12 +11,11 @@
             justify-content: space-between;
          
             .row{
-                width: 100%;
-                display: flex;
-                flex-direction: column;
-                row-gap: 30px;
-                margin-bottom: 50px !important;
                 margin: 0;
+                display: flex;
+                column-gap: 20px;
+                flex-wrap: wrap;
+                width: 100%;
                 h1{
                     color: var(--Teal-100, #081A1C);
                     font-family: Inter;
@@ -26,91 +26,45 @@
                     letter-spacing: 0.2px;
                     margin-bottom: 50px;
                 }
-                .cards{
-                    padding: 20px 0px;
-                    border-top: 1px solid #D6D6D6;
-                    border-bottom: 1px solid #D6D6D6;
-                    display: flex;
-                    justify-content: space-between;
-                    .imgBlok{
-                        width: 50%;
-                       
-                        img{
-                            border-radius: 20px;
-                            width: 100%;
-                            // height: 100%;
-                            object-fit: cover;
-                        }
+                .cardss {
+                    padding: 15px;
+                    border-radius: 12px;
+                    border: 1px solid var(--light-grayscale-light-gray-1, #c1cbd1);
+                    background: var(--light-white, #fff);
+                    width: 48%;
+                    margin-bottom: 20px;
+                    padding: 16px;
+                    h3 {
+                      margin: 0px 0px 12px 0px;
+                      color: var(--light-grayscale-dark-gray-1, #182026);
+                      font-family: Inter;
+                      font-size: 16px;
+                      font-style: normal;
+                      font-weight: 600;
+                      line-height: 22px; /* 122.222% */
+                      letter-spacing: 0.2px;
                     }
-                    .calendar{
-                        width: 10%;
-                        display: flex;
-                        flex-direction: column;
-                        // row-gap: 5px;
-                        align-items: center;
-                        h1{
-                            margin: 0;
-                            color: #1C1F35;
-                            text-align: center;
-                            font-family: Rubik;
-                            font-size: 40px;
-                            font-style: normal;
-                            font-weight: 600;
-                            line-height: normal;
-                        }
-                        p{
-                            margin: 0;
-                            color: #666C89;
-                            text-align: center;
-                            font-family: Krub;
-                            font-size: 16px;
-                            font-style: normal;
-                            font-weight: 500;
-                            line-height: 151.523%; /* 24.244px */ 
-                        }
+                    .download {
+                      border-radius: 8px;
+                      border: 1px solid #003066;
+                      padding: 8px 16px;
+                      display: flex;
+                      align-items: center;
+                      column-gap: 10px;
+                      margin-bottom: 20px;
+                      background: none;
+                      &:hover {
+                        background-color: #003066;
+                        color: white;
+                      }
                     }
-                    .description{
-                        border-left: 1px solid #ccc;
-                        padding: 20px;
-                        width: 40%;
-                        display: flex;
-                        flex-direction: column;
-                        row-gap: 15px;
-                        h1{
-                            color: var(--light-grayscale-dark-gray-1, #182026);
-                            font-family: Inter;
-                            font-size: 18px;
-                            font-style: normal;
-                            font-weight: 600;
-                            line-height: 22px; /* 122.222% */
-                            letter-spacing: 0.2px; 
-                            margin: 0;
-                        }
-                        p{
-                            color: #666C89;
-                            font-family: Krub;
-                            font-size: 16px;
-                            font-style: normal;
-                            font-weight: 500;
-                            line-height: 151.523%; /* 24.244px */
-                            margin: 0;
-                        }
-                        ol{
-                            margin: 0;
-                            padding: 0;
-                            list-style-type: disc;
-                            padding-left: 18px;
-                            li{
-                                color: #1C1F35;
-                                font-family: Krub;
-                                font-size: 16px;
-                                font-style: normal;
-                                font-weight: 600;
-                                line-height: 166.523%;
-                            }
-                        }
+                    p {
+                      display: flex;
+                      column-gap: 8px;
+                      margin: 0;
+                      padding: 0;
                     }
-                }
+                  }
             }
         }
         .layout{

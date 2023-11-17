@@ -3,14 +3,11 @@ import React from "react";
 import "./umumiyMalumot.scss";
 // components
 import Umumiy from "./Umumiy";
-import UmumMeyoriyHujjat from "./umumMeyoriyHujjat/UmumMeyoriyHujjat";
 
 function UmumiyMalumot() {
   return (
     <div className="umumiyMalumot container">
       <Umumiy />
-      <hr />
-      <UmumMeyoriyHujjat />
     </div>
   );
 }
