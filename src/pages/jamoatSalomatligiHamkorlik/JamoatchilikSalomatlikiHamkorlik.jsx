@@ -1,17 +1,18 @@
 import React from "react";
-// scss
-import "./markazUstavi.scss";
-import Sidebar from "../../components/sidebar/Sidebar";
+import SidebarTwo from "../../components/sidebar/SidebarTwo";
 import OqXalat from "../umumiyMalumot/components/OqXalat";
 import SmallContact from "../umumiyMalumot/components/SmallContact";
-import QoshimchaUstav from "./qoshimchaUstav/QoshimchaUstav";
+// scss
+import "./jamoatchilikSalomatlikiHamkorlik.scss"
 
-function MarkazUstavi() {
+function JamoatchilikSalomatlikiHamkorlik() {
   return (
-    <div className="markazUstav container">
+    <div className="jamoatSalomatligi container">
       <div className="content">
         <div className="desc">
-          <h1 className="title">MARKAZ USTAVI</h1>
+          <h1 className="title">
+            JAMOAT SALOMATLIGI TEXNIKUMLARI BILAN HAMKORLIK
+          </h1>
           <div className="downloadBtn">
             <button className="download">
               <i className="fa fa-download" aria-hidden="true"></i>{" "}
@@ -77,15 +78,14 @@ function MarkazUstavi() {
           </p>
         </div>
         <div className="layout">
-          <Sidebar />
+          <SidebarTwo />
           <OqXalat />
           <SmallContact />
         </div>
       </div>
       <hr style={{ marginBottom: "60px", marginTop: "30px" }} />
-      <QoshimchaUstav />
     </div>
   );
 }
 
-export default MarkazUstavi;
+export default JamoatchilikSalomatlikiHamkorlik;

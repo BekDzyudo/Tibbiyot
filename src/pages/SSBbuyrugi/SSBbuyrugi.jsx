@@ -65,7 +65,6 @@ function SSBbuyrugi() {
           <SmallContact />
         </div>
       </div>
-      <hr style={{ marginBottom: "60px", marginTop: "50px" }} />
     </div>
   );
 }

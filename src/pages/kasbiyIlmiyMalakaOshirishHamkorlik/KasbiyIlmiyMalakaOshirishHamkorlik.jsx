@@ -1,18 +1,18 @@
-import React, { useEffect } from "react";
-//
-import "./nizom.scss";
-//
+import React from "react";
 import SidebarTwo from "../../components/sidebar/SidebarTwo";
 import OqXalat from "../umumiyMalumot/components/OqXalat";
 import SmallContact from "../umumiyMalumot/components/SmallContact";
-import QoshimchaNizom from "./qoshimchaNizom.jsx/QoshimchaNizom";
+// scss
+import "./kasbiyIlmiyMalakaOshirishHamkorlik.scss";
 
-function Nizom() {
+function KasbiyIlmiyMalakaOshirishHamkorlik() {
   return (
-    <div className="nizom container">
+    <div className="kasbiyIlmiyHamkorlik container">
       <div className="content">
         <div className="desc">
-          <h1 className="title">NIZOM</h1>
+          <h1 className="title">
+            KASBIY MALAKA OSHIRISH VA ILMIY-AMALIY MARKAZLAR BILAN HAMKORLIK
+          </h1>
           <div className="downloadBtn">
             <button className="download">
               <i className="fa fa-download" aria-hidden="true"></i>{" "}
@@ -84,9 +84,8 @@ function Nizom() {
         </div>
       </div>
       <hr style={{ marginBottom: "60px", marginTop: "30px" }} />
-      <QoshimchaNizom />
     </div>
   );
 }
 
-export default Nizom;
+export default KasbiyIlmiyMalakaOshirishHamkorlik;

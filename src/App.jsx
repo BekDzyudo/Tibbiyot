@@ -5,17 +5,15 @@ import Home from "./pages/home/Home";
 import UmumiyMalumot from "./pages/umumiyMalumot/UmumiyMalumot";
 import FaoliyatgaOidMeyoriyHujjat from "./pages/faoliyatgaOidMeyoriyHujjat/FaoliyatgaOidMeyoriyHujjat";
 import SSBbuyrugi from "./pages/SSBbuyrugi/SSBbuyrugi";
-import Nizom from "./pages/nizom/Nizom";
-import MarkazUstavi from "./pages/markazUstavi/MarkazUstavi";
 import Rahbariyat from "./pages/rahbariyat/Rahbariyat";
 import Bolimlar from "./pages/bolimlar/Bolimlar";
 import TarkibiyTuzilma from "./pages/tarkibiyTuzilma/TarkibiyTuzilma";
 import OTMhamkorlik from "./pages/OTMhamkorlik/OTMhamkorlik";
 import XalqaroHamkorlik from "./pages/xalqaroHamkorlik/XalqaroHamkorlik";
-import MarkazMoliyaviyFaoliyati from "./pages/markazMoliyaviyFaoliyati/MarkazMoliyaviyFaoliyati";
 import YangiAdabiyotlar from "./pages/yangiAdabiyotlar/YangiAdabiyotlar";
-import OTMyangiliklar from "./pages/OTMyangiliklar/OTMyangiliklar";
 import NotFound from "./pages/notFound/NotFound";
+import JamoatchilikSalomatlikiHamkorlik from "./pages/jamoatSalomatligiHamkorlik/JamoatchilikSalomatlikiHamkorlik";
+import KasbiyIlmiyMalakaOshirishHamkorlik from "./pages/kasbiyIlmiyMalakaOshirishHamkorlik/KasbiyIlmiyMalakaOshirishHamkorlik";
 
 function App() {
   const routes = createBrowserRouter([
@@ -40,15 +38,7 @@ function App() {
           element: <SSBbuyrugi />,
         },
         {
-          path: "Nizom",
-          element: <Nizom />,
-        },
-        {
-          path: "Markaz-ustavi",
-          element: <MarkazUstavi />,
-        },
-        {
-          path: "Rahbariyat",
+          path: "Rahbariyat-va-hodimlar",
           element: <Rahbariyat />,
         },
         {
@@ -68,16 +58,16 @@ function App() {
           element: <XalqaroHamkorlik />,
         },
         {
-          path: "Markaz-Moliyaviy-Faoliyati",
-          element: <MarkazMoliyaviyFaoliyati />,
+          path: "Jamoat-salomatligi-texnikumlari-bilan-hamkorlik",
+          element: <JamoatchilikSalomatlikiHamkorlik />,
+        },
+        {
+          path: "Kasbiy-malaka-oshirish-va-Ilmiy-amaliy-markazlar-bilan-hamkorlik",
+          element: <KasbiyIlmiyMalakaOshirishHamkorlik />,
         },
         {
           path: "Yangi-adabiyotlar",
           element: <YangiAdabiyotlar />,
-        },
-        {
-          path: "OTM-yangiliklari",
-          element: <OTMyangiliklar />,
         },
         {
           path: "*",
