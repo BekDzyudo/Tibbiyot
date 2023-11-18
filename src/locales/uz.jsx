@@ -13,6 +13,9 @@ export const uz = {
       dropdownNavbar: {
         markaz_haqida: "MARKAZ HAQIDA",
         umumiy_malumot: "Umumiy ma’lumot",
+        yaratiladiganAdabiyotlar: "Yaratiladigan adabiyotlar",
+        oquvResurslarigaQoyilganTalablar:
+          "O'quv resurslariga qo'yiladigan talablar",
         faoliyatgaOidMeyoriyHujjatlar: "Faoliyatga oid me’yoriy hujjatlar",
         SSBBuyrugi: "SSB buyrug‘i",
         markaz_tuzilmasi: "MARKAZ TUZILMASI",
@@ -22,9 +25,18 @@ export const uz = {
         faoliyat: "FAOLIYAT",
         OTMxamkorlik: " ОТМlar bilan hamkorlik",
         xalqaroXamkorlik: "Xalqaro hamkorlik",
-        yangiliklar: "YANGILIKLAR",
+        bizningHamkorlarimiz: "HAMKORLARIMIZ",
+        oliyTibbiyTalimMuassasalari: "Oliy tibbiy ta'lim muassasalari",
+        jamoatSalomatligiTexnikumlari: "Jamoat salomatlik texnikumlari",
+        tibbiyotXodimlariningMalakasiniOshirish:
+          "Tibbiyot xodimlarining malakasini oshirish markazi",
+        urtaTibbiyotFarmasevt:
+          "O'rta tibbiyot va farmasevt xodimlarining malakasini oshirish va iqtisoslashtirish markazi hamda uning hududiy bo'linmalari",
+        ilmiyAmaliyMarkazlar: "Ilmiy-amaliy markazlar",
+        xorijiyHamkorlar: "Horijiy hamkorlar",
         jamoatSalomatligi: "Jamoat salomatligi texnikumlari bilan hamkorlik",
-        kasbiyIlmiyHamkorlik: "Kasbiy malaka oshirish va Ilmiy-amaliy markazlar bilan hamkorlik",
+        kasbiyIlmiyHamkorlik:
+          "Kasbiy malaka oshirish va Ilmiy-amaliy markazlar bilan hamkorlik",
         yangi_adabiyotlar: "OTMlar faoliyatiga oid yangi adabiyotlar",
         oquv_resurslar: "FANLAR BO'YICHA O'QUV RESURSLARI",
       },

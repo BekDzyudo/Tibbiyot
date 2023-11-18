@@ -13,6 +13,9 @@ export const ru = {
       dropdownNavbar: {
         markaz_haqida: "О ЦЕНТРЕ",
         umumiy_malumot: "Общая информация",
+        yaratiladiganAdabiyotlar: "Литература, которую нужно создать",
+        oquvResurslarigaQoyilganTalablar:
+          "Требования к образовательным ресурсам",
         faoliyatgaOidMeyoriyHujjatlar:
           "Нормативные документы, связанные с деятельностью",
         SSBBuyrugi: "команда SSB",
@@ -23,7 +26,15 @@ export const ru = {
         faoliyat: "АКТИВНОСТЬ",
         OTMxamkorlik: "Сотрудничество с вузами",
         xalqaroXamkorlik: "Международное сотрудничество",
-        yangiliklar: "НОВОСТИ",
+        bizningHamkorlarimiz: "НАШИ ПАРТНЕРЫ",
+        oliyTibbiyTalimMuassasalari: "Высшие медицинские учебные заведения",
+        jamoatSalomatligiTexnikumlari: "Техники общественного здравоохранения",
+        tibbiyotXodimlariningMalakasiniOshirish:
+          "Центр подготовки медицинского персонала",
+        urtaTibbiyotFarmasevt:
+          "Центр подготовки и экономии среднего медицинского и фармацевтического персонала и его региональные подразделения",
+        ilmiyAmaliyMarkazlar: "Научно-практические центры",
+        xorijiyHamkorlar: "Иностранные партнеры",
         jamoatSalomatligi: "Сотрудничество с техникумами здравоохранения",
         kasbiyIlmiyHamkorlik:
           "Профессиональная подготовка и сотрудничество с научно-практическими центрами",

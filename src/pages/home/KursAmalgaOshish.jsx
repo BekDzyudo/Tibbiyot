@@ -51,7 +51,7 @@ function KursAmalgaOshish() {
                   aria-expanded="false"
                   aria-controls="flush-collapseTwo"
                 >
-                  Nima uchun kurslarni o’rganish kerak?
+                  Pullik kurslarning maqsadi?
                 </button>
               </h2>
               <div
@@ -77,7 +77,7 @@ function KursAmalgaOshish() {
                   aria-expanded="false"
                   aria-controls="flush-collapseThree"
                 >
-                  Ushbu kurslar kimga mos keladi?
+                  Ulardan foydalanish bo'yicha maslahatlar?
                 </button>
               </h2>
               <div
@@ -103,7 +103,7 @@ function KursAmalgaOshish() {
                   aria-expanded="false"
                   aria-controls="flush-collapseFour"
                 >
-                  Elektron axborat ta’lim resurslari
+                  Elektron tibbiy axborat resurslari
                 </button>
               </h2>
               <div
@@ -131,11 +131,11 @@ function KursAmalgaOshish() {
           <div className="tel">
             <img src={phoneIcon} alt="" />
             <p>
-              Telefon raqami <br /> (00) 123 456 789
+              Telefon raqami <br /> (71) 268-13-11
             </p>
           </div>
           <div className="btn">
-          <Link>Batafsil</Link>
+            <Link>Batafsil</Link>
           </div>
         </div>
       </div>

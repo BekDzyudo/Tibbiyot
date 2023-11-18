@@ -3,6 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 // images
 import logo from "../../assets/icons/logo.svg";
+import logoOrg from "../../assets/icons/logoOrg.png";
 import login from "../../assets/icons/Login.svg";
 import nurse from "../../assets/images/nurse.png";
 import phone from "../../assets/icons/phone.svg";
@@ -57,7 +58,7 @@ function Header() {
       <div className="bottomNavbar container">
         <Link className="logo">
           <div className="logoBlok">
-            <img src={logo} alt="Logo" />
+            <img src={i18n.language == "uz" ? logo : logoOrg} alt="Logo" />
           </div>
           <p>
             Tibbiy ta’limda o‘quv <br /> resurslarini yaratish va <br />
@@ -105,6 +106,20 @@ function Header() {
                   <NavLink to="/SSB-buyrugi">
                     {" "}
                     {t("home_page.dropdownNavbar.SSBBuyrugi")}
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink to="/Yaratiladigan-Adabiyotlar">
+                    {" "}
+                    {t("home_page.dropdownNavbar.yaratiladiganAdabiyotlar")}
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink to="/Oquv-resurslariga-qoyilgan-talablar">
+                    {" "}
+                    {t(
+                      "home_page.dropdownNavbar.oquvResurslarigaQoyilganTalablar"
+                    )}
                   </NavLink>
                 </li>
               </ul>
@@ -167,10 +182,45 @@ function Header() {
             </li>
             <li className="liDropLink4">
               <NavLink className="dropLink">
-                <p>{t("home_page.dropdownNavbar.yangiliklar")}</p>{" "}
+                <p>{t("home_page.dropdownNavbar.bizningHamkorlarimiz")}</p>{" "}
                 <i className="fa fa-angle-down" aria-hidden="true"></i>
               </NavLink>
-              <ul className="inner"></ul>
+              <ul className="inner">
+                <li>
+                  <NavLink to="/OTM-bilan-hamkorlik">
+                    {t("home_page.dropdownNavbar.oliyTibbiyTalimMuassasalari")}{" "}
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink to="/OTM-bilan-hamkorlik">
+                    {t(
+                      "home_page.dropdownNavbar.jamoatSalomatligiTexnikumlari"
+                    )}{" "}
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink to="/OTM-bilan-hamkorlik">
+                    {t(
+                      "home_page.dropdownNavbar.tibbiyotXodimlariningMalakasiniOshirish"
+                    )}{" "}
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink to="/OTM-bilan-hamkorlik">
+                    {t("home_page.dropdownNavbar.urtaTibbiyotFarmasevt")}{" "}
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink to="/OTM-bilan-hamkorlik">
+                    {t("home_page.dropdownNavbar.ilmiyAmaliyMarkazlar")}{" "}
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink to="/OTM-bilan-hamkorlik">
+                    {t("home_page.dropdownNavbar.xorijiyHamkorlar")}{" "}
+                  </NavLink>
+                </li>
+              </ul>
             </li>
             <li className="liDropLink5">
               <NavLink className="dropLink">

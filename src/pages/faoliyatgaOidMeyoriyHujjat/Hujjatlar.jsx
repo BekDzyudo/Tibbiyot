@@ -5,8 +5,23 @@ import OqXalat from "../umumiyMalumot/components/OqXalat";
 import SmallContact from "../umumiyMalumot/components/SmallContact";
 import { useGetFetch } from "../../hooks/useGetFetch";
 import { Pagination } from "@mui/material";
+import { Link } from "react-router-dom";
 
 function Hujjatlar() {
+  const month = [
+    "Yanvar",
+    "Fevral",
+    "Mart",
+    "Aprel",
+    "May",
+    "Iyun",
+    "Iyul",
+    "Avgust",
+    "Sentabr",
+    "Oktabr",
+    "Noyabr",
+    "Dekabr",
+  ];
   const [page, setPage] = useState(1);
   function handlePagination(e, p) {
     setPage(p);
@@ -25,13 +40,31 @@ function Hujjatlar() {
           {data.results.map((hujjat) => {
             return (
               <div className="cardss" key={hujjat.id}>
-                <h3>{hujjat.id}</h3>
-                <button className="download">
+                <h3>{hujjat.title}</h3>
+                <Link to={hujjat.file} className="download" download={true}>
                   <i className="fa fa-download" aria-hidden="true"></i>{" "}
                   <span>Yuklab olish</span>
-                </button>
+                </Link>
                 <p>
-                  <span>18:00</span> <span>05 noyabr</span>
+                  <span>
+                    {new Date(hujjat.created_at).getHours() < 10
+                      ? "0" + new Date(hujjat.created_at).getHours()
+                      : new Date(hujjat.created_at).getHours()}
+                    :
+                    {new Date(hujjat.created_at).getMinutes() < 10
+                      ? "0" + new Date(hujjat.created_at).getMinutes()
+                      : new Date(hujjat.created_at).getMinutes()}
+                    :
+                    {new Date(hujjat.created_at).getSeconds() < 10
+                      ? "0" + new Date(hujjat.created_at).getSeconds()
+                      : new Date(hujjat.created_at).getSeconds()}
+                  </span>{" "}
+                  <span>
+                    {new Date(hujjat.created_at).getDate() < 10
+                      ? "0" + new Date(hujjat.created_at).getDate()
+                      : new Date(hujjat.created_at).getDate()}{" "}
+                    {month[new Date(hujjat.created_at).getMonth()]}
+                  </span>
                 </p>
               </div>
             );

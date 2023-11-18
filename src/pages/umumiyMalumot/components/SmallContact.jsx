@@ -9,7 +9,7 @@ function SmallContact() {
       </h2>
 
       <p className="tel">
-        Telefon raqami <br /> (00) 123 456 789
+        Telefon raqami <br /> (71) 268-13-11
       </p>
 
       <hr />

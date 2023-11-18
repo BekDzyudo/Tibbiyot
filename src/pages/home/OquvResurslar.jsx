@@ -24,12 +24,12 @@ function OquvResurslar() {
         <div className="kurslar">
           <Link>
             <img src={kasbiyKurs} />
-            <p>Kasbga yo’naltirilgan kurslar.</p>
+            <p>Markaz faoliyati</p>
           </Link>
           <Link>
             <img src={pullikKurs} />
             <p>
-              Pullik kurslar. <br /> Qisqa muddatli kurslar.
+             Talabalar va tibbiyot hodimlari uchun pullik resurslar
             </p>
           </Link>
         </div>

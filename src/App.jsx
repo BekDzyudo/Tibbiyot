@@ -14,6 +14,8 @@ import YangiAdabiyotlar from "./pages/yangiAdabiyotlar/YangiAdabiyotlar";
 import NotFound from "./pages/notFound/NotFound";
 import JamoatchilikSalomatlikiHamkorlik from "./pages/jamoatSalomatligiHamkorlik/JamoatchilikSalomatlikiHamkorlik";
 import KasbiyIlmiyMalakaOshirishHamkorlik from "./pages/kasbiyIlmiyMalakaOshirishHamkorlik/KasbiyIlmiyMalakaOshirishHamkorlik";
+import YaratiladiganAdabiyotlar from "./pages/yaratiladiganAdabiyotlar/YaratiladiganAdabiyotlar";
+import OquvResurslarigaQoyilganTalablar from "./pages/oquvResurslarigaQoyilganTalablar/OquvResurslarigaQoyilganTalablar";
 
 function App() {
   const routes = createBrowserRouter([
@@ -36,6 +38,14 @@ function App() {
         {
           path: "SSB-buyrugi",
           element: <SSBbuyrugi />,
+        },
+        {
+          path: "Yaratiladigan-Adabiyotlar",
+          element: <YaratiladiganAdabiyotlar />,
+        },
+        {
+          path: "Oquv-resurslariga-qoyilgan-talablar",
+          element: <OquvResurslarigaQoyilganTalablar />,
         },
         {
           path: "Rahbariyat-va-hodimlar",
