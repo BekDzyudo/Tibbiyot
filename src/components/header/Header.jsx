@@ -223,7 +223,10 @@ function Header() {
               </ul>
             </li>
             <li className="liDropLink5">
-              <NavLink className="dropLink">
+              <NavLink
+                to="/Fanlar-boyicha-oquv-resurslari"
+                className="dropLink"
+              >
                 <p>{t("home_page.dropdownNavbar.oquv_resurslar")}</p>
               </NavLink>
             </li>

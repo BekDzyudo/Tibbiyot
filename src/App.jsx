@@ -16,6 +16,7 @@ import JamoatchilikSalomatlikiHamkorlik from "./pages/jamoatSalomatligiHamkorlik
 import KasbiyIlmiyMalakaOshirishHamkorlik from "./pages/kasbiyIlmiyMalakaOshirishHamkorlik/KasbiyIlmiyMalakaOshirishHamkorlik";
 import YaratiladiganAdabiyotlar from "./pages/yaratiladiganAdabiyotlar/YaratiladiganAdabiyotlar";
 import OquvResurslarigaQoyilganTalablar from "./pages/oquvResurslarigaQoyilganTalablar/OquvResurslarigaQoyilganTalablar";
+import FanlarBoyichaOquvResurslariAll from "./pages/fanlarBoyichaOquvResurslariAll/fanlarBoyichaOquvResurslariAll";
 
 function App() {
   const routes = createBrowserRouter([
@@ -78,6 +79,10 @@ function App() {
         {
           path: "Yangi-adabiyotlar",
           element: <YangiAdabiyotlar />,
+        },
+        {
+          path: "Fanlar-boyicha-oquv-resurslari",
+          element: <FanlarBoyichaOquvResurslariAll />,
         },
         {
           path: "*",
