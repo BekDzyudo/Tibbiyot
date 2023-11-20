@@ -4,6 +4,7 @@ import SidebarTwo from "../../components/sidebar/SidebarTwo";
 import OqXalat from "../umumiyMalumot/components/OqXalat";
 import SmallContact from "../umumiyMalumot/components/SmallContact";
 import { useGetFetch } from "../../hooks/useGetFetch";
+import Loader from "../../components/loader/Loader";
 import { Pagination } from "@mui/material";
 import { Link } from "react-router-dom";
 
@@ -27,7 +28,7 @@ function Hujjatlar() {
     setPage(p);
   }
   const url = `http://192.168.101.222:8000/meyoriy_hujjat?page=${page}`;
-  const { data } = useGetFetch(url);
+  const { data, isPending, error } = useGetFetch(url);
 
   if (!data) {
     return <p></p>;
@@ -37,6 +38,8 @@ function Hujjatlar() {
       <div className="desc">
         <div className="row">
           <h1 className="title">FAOLIYATGA OID ME’YORIY HUJJATLAR</h1>
+          {isPending && <Loader />}
+          {error && <h2>{error}</h2>}
           {data.results.map((hujjat) => {
             return (
               <div className="cardss" key={hujjat.id}>
