@@ -8,12 +8,9 @@ import SSBbuyrugi from "./pages/SSBbuyrugi/SSBbuyrugi";
 import Rahbariyat from "./pages/rahbariyat/Rahbariyat";
 import Bolimlar from "./pages/bolimlar/Bolimlar";
 import TarkibiyTuzilma from "./pages/tarkibiyTuzilma/TarkibiyTuzilma";
-import OTMhamkorlik from "./pages/OTMhamkorlik/OTMhamkorlik";
 import XalqaroHamkorlik from "./pages/xalqaroHamkorlik/XalqaroHamkorlik";
 import YangiAdabiyotlar from "./pages/yangiAdabiyotlar/YangiAdabiyotlar";
 import NotFound from "./pages/notFound/NotFound";
-import JamoatchilikSalomatlikiHamkorlik from "./pages/jamoatSalomatligiHamkorlik/JamoatchilikSalomatlikiHamkorlik";
-import KasbiyIlmiyMalakaOshirishHamkorlik from "./pages/kasbiyIlmiyMalakaOshirishHamkorlik/KasbiyIlmiyMalakaOshirishHamkorlik";
 import YaratiladiganAdabiyotlar from "./pages/yaratiladiganAdabiyotlar/YaratiladiganAdabiyotlar";
 import OquvResurslarigaQoyilganTalablar from "./pages/oquvResurslarigaQoyilganTalablar/OquvResurslarigaQoyilganTalablar";
 import FanlarBoyichaOquvResurslariAll from "./pages/fanlarBoyichaOquvResurslariAll/fanlarBoyichaOquvResurslariAll";
@@ -61,20 +58,8 @@ function App() {
           element: <TarkibiyTuzilma />,
         },
         {
-          path: "OTM-bilan-hamkorlik",
-          element: <OTMhamkorlik />,
-        },
-        {
-          path: "Xalqaro-hamkorlik",
+          path: "Hamkorlar/:id",
           element: <XalqaroHamkorlik />,
-        },
-        {
-          path: "Jamoat-salomatligi-texnikumlari-bilan-hamkorlik",
-          element: <JamoatchilikSalomatlikiHamkorlik />,
-        },
-        {
-          path: "Kasbiy-malaka-oshirish-va-Ilmiy-amaliy-markazlar-bilan-hamkorlik",
-          element: <KasbiyIlmiyMalakaOshirishHamkorlik />,
         },
         {
           path: "Yangi-adabiyotlar",

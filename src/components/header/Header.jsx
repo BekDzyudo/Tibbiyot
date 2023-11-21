@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { useGetFetch } from "../../hooks/useGetFetch";
 // images
 import logo from "../../assets/icons/logo.svg";
 import logoOrg from "../../assets/icons/logoOrg.png";
@@ -13,10 +14,14 @@ import gmail from "../../assets/icons/gmail.svg";
 import "./header.scss";
 
 function Header() {
+  // language idea
   const { i18n, t } = useTranslation();
   function onLanguage(e) {
     i18n.changeLanguage(e.target.value);
   }
+  // hamkorlar idea
+  const url = "http://192.168.101.222:8000/kategoriya_hamkor";
+  const { data: hamkors } = useGetFetch(url);
   return (
     <header>
       <div className="topNavbar">
@@ -154,26 +159,6 @@ function Header() {
               </NavLink>
               <ul className="inner">
                 <li>
-                  <NavLink to="/OTM-bilan-hamkorlik">
-                    {t("home_page.dropdownNavbar.OTMxamkorlik")}{" "}
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink to="/Xalqaro-hamkorlik">
-                    {t("home_page.dropdownNavbar.xalqaroXamkorlik")}
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink to="/Jamoat-salomatligi-texnikumlari-bilan-hamkorlik">
-                    {t("home_page.dropdownNavbar.jamoatSalomatligi")}
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink to="/Kasbiy-malaka-oshirish-va-Ilmiy-amaliy-markazlar-bilan-hamkorlik">
-                    {t("home_page.dropdownNavbar.kasbiyIlmiyHamkorlik")}
-                  </NavLink>
-                </li>
-                <li>
                   <NavLink to="/Yangi-adabiyotlar">
                     {t("home_page.dropdownNavbar.yangi_adabiyotlar")}
                   </NavLink>
@@ -186,40 +171,16 @@ function Header() {
                 <i className="fa fa-angle-down" aria-hidden="true"></i>
               </NavLink>
               <ul className="inner">
-                <li>
-                  <NavLink to="/OTM-bilan-hamkorlik">
-                    {t("home_page.dropdownNavbar.oliyTibbiyTalimMuassasalari")}{" "}
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink to="/OTM-bilan-hamkorlik">
-                    {t(
-                      "home_page.dropdownNavbar.jamoatSalomatligiTexnikumlari"
-                    )}{" "}
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink to="/OTM-bilan-hamkorlik">
-                    {t(
-                      "home_page.dropdownNavbar.tibbiyotXodimlariningMalakasiniOshirish"
-                    )}{" "}
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink to="/OTM-bilan-hamkorlik">
-                    {t("home_page.dropdownNavbar.urtaTibbiyotFarmasevt")}{" "}
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink to="/OTM-bilan-hamkorlik">
-                    {t("home_page.dropdownNavbar.ilmiyAmaliyMarkazlar")}{" "}
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink to="/OTM-bilan-hamkorlik">
-                    {t("home_page.dropdownNavbar.xorijiyHamkorlar")}{" "}
-                  </NavLink>
-                </li>
+                {hamkors &&
+                  hamkors.map((hamkor) => {
+                    return (
+                      <li key={hamkor.id}>
+                        <NavLink to={`/Hamkorlar/${hamkor.id}`}>
+                          {hamkor.name}
+                        </NavLink>
+                      </li>
+                    );
+                  })}
               </ul>
             </li>
             <li className="liDropLink5">

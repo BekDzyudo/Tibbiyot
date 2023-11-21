@@ -8,7 +8,7 @@ export const ru = {
         services: "Услуги",
         news: "Новости и объявления",
         contact: "Cвязаться с нами",
-        login: "Входить",
+        login: "Войти",
       },
       dropdownNavbar: {
         markaz_haqida: "О ЦЕНТРЕ",

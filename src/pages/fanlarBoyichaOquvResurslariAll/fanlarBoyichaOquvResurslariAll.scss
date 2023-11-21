@@ -38,6 +38,12 @@
                     outline: none;
                 }
             }
+            .info{
+                border: 1px solid red;
+                .question{
+                    border: 1px solid red;
+                }
+            }
         }
         .cardsBlok{
             width: 70%;

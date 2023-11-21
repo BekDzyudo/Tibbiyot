@@ -29,8 +29,9 @@ function SSBbuyrugi() {
   function handlePagination(e, p) {
     setPage(p);
   }
-  const url = `http://192.168.101.222:8000/ssb_buyruq`;
+  const url = `http://192.168.101.222:8000/ssb_buyruq?page=${page}`;
   const { data, isPending, error } = useGetFetch(url);
+  console.log(data);
   if (!data) {
     return <p></p>;
   }
@@ -42,7 +43,7 @@ function SSBbuyrugi() {
             <h1 className="title">SSB buyrug’i</h1>
             {isPending && <Loader />}
             {error && <h2>{error}</h2>}
-            {data.map((ssb) => {
+            {data.results.map((ssb) => {
               return (
                 <div key={ssb.id} className="cardss">
                   <h3>{ssb.title}</h3>
@@ -77,6 +78,11 @@ function SSBbuyrugi() {
           </div>
           <>
             <hr style={{ marginBottom: "20px", marginTop: "40px" }} />
+            <Pagination
+              count={data.total_pages}
+              color="primary"
+              onChange={handlePagination}
+            ></Pagination>
           </>
         </div>
         <div className="layout">

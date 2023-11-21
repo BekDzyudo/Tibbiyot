@@ -87,15 +87,16 @@
                             margin: 0;
                             display: flex;
                             column-gap: 5px;
-                            span{
+                            strong{
                                 color: black;
                                 text-align: justify;
                                 font-family: Rubik;
                                 font-size: 16px;
                                 font-style: normal;
                                 font-weight: 600;
-                                line-height: 130.5%; /* 20.88px */
+                                line-height: 130.5%;
                             }
+                            
                             p{
                                 margin: 0;
                                 color: #666C89;

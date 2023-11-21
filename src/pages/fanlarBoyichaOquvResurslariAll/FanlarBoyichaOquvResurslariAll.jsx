@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import photo from "../../assets/images/Photo.png";
 import "./fanlarBoyichaOquvResurslariAll.scss";
-import AccardionOquvQollanma from "./AccardionOquvQollanma";
+// image
+import book from "../../assets/icons/fa_book.svg"
 
 function FanlarBoyichaOquvResurslariAll() {
   const [questions, setQuestions] = useState([
@@ -10,6 +11,7 @@ function FanlarBoyichaOquvResurslariAll() {
     { id: 3, title: "title3", desc: "desc3" },
     { id: 4, title: "title4", desc: "desc4" },
   ]);
+  const [showInfo, setShowInfo] = useState(false);
   return (
     <div className="fanlarBoyichaOquResurslarAll container">
       <h1 className="title">FANLAR BO’YICHA O’QUV RESURSLAR</h1>
@@ -20,7 +22,22 @@ function FanlarBoyichaOquvResurslariAll() {
           </form>
           <section className="info">
             {questions.map((question) => (
-              <AccardionOquvQollanma key={question.id} {...question} />
+               <article className="question">
+               <header>
+                 <h4>{question.title} <span className="count">
+                     <img src={book} />
+                     <p></p>
+                     </span></h4>
+                 <button className="btn" onClick={() => setShowInfo(!showInfo)}>
+                   {showInfo ? (
+                     <i class="fa fa-minus" aria-hidden="true"></i>
+                   ) : (
+                     <i class="fa fa-plus" aria-hidden="true"></i>
+                   )}
+                 </button>
+               </header>
+               {showInfo && question.desc}
+             </article>
             ))}
           </section>
         </div>

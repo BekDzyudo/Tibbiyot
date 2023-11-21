@@ -1,18 +1,22 @@
 import React from "react";
 // scss
 import "./xalqaroHamkorlik.scss";
-// image
-import logoType from "../../assets/icons/otmIcon.svg";
 // components
 import SidebarTwo from "../../components/sidebar/SidebarTwo";
 import OqXalat from "../umumiyMalumot/components/OqXalat";
 import SmallContact from "../umumiyMalumot/components/SmallContact";
+import { useGetFetch } from "../../hooks/useGetFetch";
+import { useParams } from "react-router-dom";
 
 function XalqaroHamkorlik() {
+  const { id } = useParams();
+  const url = `http://192.168.101.222:8000/hamkorlar/${id}`;
+  const { data } = useGetFetch(url);
+
   return (
     <div className="xalqaro container">
       <div className="desc">
-        <h1 className="title">XALQARO HAMKORLIK</h1>
+        <h1 className="title">{data && data[0].category.name}</h1>
         <table className="xalqaroTable">
           <tr className="thead">
             <td>N</td>
@@ -20,58 +24,19 @@ function XalqaroHamkorlik() {
             <td>Faoliyati</td>
             <td>Logotype</td>
           </tr>
-          <tr className="tbody">
-            <td>1</td>
-            <td>UNESCO</td>
-            <td>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Laudantium unde at consectetur voluptate nostrum iste obcaecati
-              fugiat perspiciatis. Nulla, magnam? Mollitia incidunt nesciunt non
-              delectus aliquam at sed, obcaecati reiciendis?
-            </td>
-            <td>
-              <img src={logoType} />
-            </td>
-          </tr>
-          <tr className="tbody">
-            <td>1</td>
-            <td>UNESCO</td>
-            <td>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Laudantium unde at consectetur voluptate nostrum iste obcaecati
-              fugiat perspiciatis. Nulla, magnam? Mollitia incidunt nesciunt non
-              delectus aliquam at sed, obcaecati reiciendis?
-            </td>
-            <td>
-              <img src={logoType} />
-            </td>
-          </tr>
-          <tr className="tbody">
-            <td>1</td>
-            <td>UNESCO</td>
-            <td>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Laudantium unde at consectetur voluptate nostrum iste obcaecati
-              fugiat perspiciatis. Nulla, magnam? Mollitia incidunt nesciunt non
-              delectus aliquam at sed, obcaecati reiciendis?
-            </td>
-            <td>
-              <img src={logoType} />
-            </td>
-          </tr>
-          <tr className="tbody">
-            <td>1</td>
-            <td>UNESCO</td>
-            <td>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Laudantium unde at consectetur voluptate nostrum iste obcaecati
-              fugiat perspiciatis. Nulla, magnam? Mollitia incidunt nesciunt non
-              delectus aliquam at sed, obcaecati reiciendis?
-            </td>
-            <td>
-              <img src={logoType} />
-            </td>
-          </tr>
+          {data &&
+            data.map((item, index) => {
+              return (
+                <tr key={item.id} className="tbody">
+                  <td>{index + 1}</td>
+                  <td>{item.name}</td>
+                  <td dangerouslySetInnerHTML={{ __html: item.faoliyat }}></td>
+                  <td>
+                    <img src={item.rasm} />
+                  </td>
+                </tr>
+              );
+            })}
         </table>
       </div>
       <div className="layout">

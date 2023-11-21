@@ -13,7 +13,7 @@ function Rahbariyat() {
   const url = `http://192.168.101.222:8000/rahbariyat`;
   const { data, isPending, error } = useGetFetch(url);
   if (!data) {
-    return <p>null</p>;
+    return <p></p>;
   }
   return (
     <div className="rahbariyat container">
@@ -46,26 +46,26 @@ function Rahbariyat() {
                         ></p>
                       </p>
                       <p className="child">
-                        <span>Tamomlagan (Bakalavr):</span>
+                        <strong>Tamomlagan (Bakalavr):</strong>
                         <p> 2012 yil TATU Urganch filiali</p>
                       </p>
                       <p className="child">
-                        <span>Ma’lumoti bo’yicha mutaxassisligi:</span>
+                        <strong>Ma’lumoti bo’yicha mutaxassisligi:</strong>
                         <p> Axborot servis (Servis) </p>
                       </p>
                       <p className="child">
-                        <span> Tamomlagan (Magistratura):</span>
+                        <strong> Tamomlagan (Magistratura):</strong>
                         <p> 2021 yil TDTU</p>
                       </p>
                       <p className="child">
-                        <span> Ma’lumoti bo’yicha mutaxassisligi:</span>
+                        <strong> Ma’lumoti bo’yicha mutaxassisligi:</strong>
                         <p>
                           Komyuter tizimlari va ularning dasturiy ta’minoti{" "}
                         </p>
                       </p>
 
                       <p className="child">
-                        <span> Telefon:</span>
+                        <strong> Telefon:</strong>
                         <p>
                           {" "}
                           (998) 01-234-56-78; (998) 01-234-56-78; (998)
@@ -73,16 +73,16 @@ function Rahbariyat() {
                         </p>
                       </p>
                       <p className="child">
-                        <span>Elektron pochta:</span>
+                        <strong>Elektron pochta:</strong>
                         <p> qwerty@mail.ru; qwerty@gmail.com</p>
                       </p>
                     </div>
                     <p className="qabul">
-                      <span>Qabul kunlari:</span>
+                      <strong>Qabul kunlari:</strong>
                       <p>
-                        <span className="kun">Dushanba</span> kunlari soat{" "}
-                        <span className="kirish">16:00</span> dan{" "}
-                        <span className="chiqish">18:00</span> gacha
+                        <strong className="kun">Dushanba</strong> kunlari soat{" "}
+                        <strong className="kirish">16:00</strong> dan{" "}
+                        <strong className="chiqish">18:00</strong> gacha
                       </p>
                     </p>
                   </div>
