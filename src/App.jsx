@@ -13,7 +13,7 @@ import YangiAdabiyotlar from "./pages/yangiAdabiyotlar/YangiAdabiyotlar";
 import NotFound from "./pages/notFound/NotFound";
 import YaratiladiganAdabiyotlar from "./pages/yaratiladiganAdabiyotlar/YaratiladiganAdabiyotlar";
 import OquvResurslarigaQoyilganTalablar from "./pages/oquvResurslarigaQoyilganTalablar/OquvResurslarigaQoyilganTalablar";
-import FanlarBoyichaOquvResurslariAll from "./pages/fanlarBoyichaOquvResurslariAll/fanlarBoyichaOquvResurslariAll";
+import FanlarBoyichaOquvResurslariAll from "./pages/fanlarBoyichaOquvResurslariAll/FanlarBoyichaOquvResurslariAll";
 
 function App() {
   const routes = createBrowserRouter([
