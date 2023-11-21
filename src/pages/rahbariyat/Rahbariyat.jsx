@@ -40,7 +40,7 @@ function Rahbariyat() {
                     <h3>ЎЗБЕКИСТОН РЕСПУБЛИКАСИ СОҒЛИҚНИ САҚЛАШ ВАЗИРИ</h3>
                     <div className="info">
                       <p className="child">
-                        <span>Ma’lumoti:</span>
+                        {/* <span>Ma’lumoti:</span> */}
                         <p
                           dangerouslySetInnerHTML={{ __html: person.umumiy }}
                         ></p>
@@ -51,7 +51,7 @@ function Rahbariyat() {
                       </p>
                       <p className="child">
                         <span>Ma’lumoti bo’yicha mutaxassisligi:</span>
-                        <p> Axborot servis (Servis)</p>
+                        <p> Axborot servis (Servis) </p>
                       </p>
                       <p className="child">
                         <span> Tamomlagan (Magistratura):</span>
@@ -85,10 +85,6 @@ function Rahbariyat() {
                         <span className="chiqish">18:00</span> gacha
                       </p>
                     </p>
-                    <button className="download">
-                      <i className="fa fa-arrow-down" aria-hidden="true"></i>
-                      <span>To’liq ma’lumot</span>
-                    </button>
                   </div>
                 </div>
               );

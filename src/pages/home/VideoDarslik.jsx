@@ -71,7 +71,6 @@ function VideoDarslik() {
           </div>
         </div>
       </div>
-      <hr />
     </>
   );
 }

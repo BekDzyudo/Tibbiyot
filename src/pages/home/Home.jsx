@@ -6,7 +6,6 @@ import OquvResurslar from "./OquvResurslar";
 import KasbMaqsadVazifa from "./KasbMaqsadVazifa";
 import KursAmalgaOshish from "./KursAmalgaOshish";
 import VideoDarslik from "./VideoDarslik";
-import MeyoriyHujjatlar from "./MeyoriyHujjatlar";
 
 function Home() {
   return (
@@ -15,7 +14,6 @@ function Home() {
       <KasbMaqsadVazifa />
       <KursAmalgaOshish />
       <VideoDarslik />
-      <MeyoriyHujjatlar />
     </div>
   );
 }
