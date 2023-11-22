@@ -17,6 +17,7 @@ import FanlarBoyichaOquvResurslariAll from "./pages/fanlarBoyichaOquvResurslariA
 import FanMundarija from "./pages/fanlarBoyichaOquvResurslariAll/fanMundarija/FanMundarija";
 import PullikResurslar from "./pages/fanlarBoyichaOquvResurslariAll/PullikResurslar";
 import LayoutFanMundarija from "./pages/fanlarBoyichaOquvResurslariAll/fanMundarija/LayoutFanMundarija";
+import MaruzaMatn from "./pages/fanlarBoyichaOquvResurslariAll/fanMundarija/mavzu/MaruzaMatn";
 
 function App() {
   const routes = createBrowserRouter([
@@ -83,6 +84,10 @@ function App() {
                 {
                   index: true,
                   element: <FanMundarija />,
+                },
+                {
+                  path: "maruza-matn",
+                  element: <MaruzaMatn />,
                 },
               ],
             },

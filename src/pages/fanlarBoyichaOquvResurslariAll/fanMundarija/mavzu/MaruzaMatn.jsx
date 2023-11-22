@@ -1,7 +1,7 @@
 import React from "react";
-import "./mavzu.scss";
+import "./maruzaMatn.scss";
 
-function Mavzu() {
+function MaruzaMatn() {
   return (
     <div className="mavzu container">
       <h1 className="title">FARMAKOLOGIYA VA REPSEPTURA ASOSLARI</h1>
@@ -121,4 +121,4 @@ function Mavzu() {
   );
 }
 
-export default Mavzu;
+export default MaruzaMatn;

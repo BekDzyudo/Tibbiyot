@@ -24,7 +24,7 @@ function FanAccardion() {
       {showInfo && (
         <ul className="list">
           <li className="item">
-            <Link to="">
+            <Link to="/Fanlar-boyicha-oquv-resurslari/fan/maruza-matn">
               <p>Mavzular to‘plami</p>
             </Link>
           </li>
