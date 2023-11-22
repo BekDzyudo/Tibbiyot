@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import photo from "../../assets/images/Photo.png";
 import "./fanlarBoyichaOquvResurslariAll.scss";
 // image
-import book from "../../assets/icons/fa_book.svg";
 import Accardion from "./Accardion";
 
 function FanlarBoyichaOquvResurslariAll() {
@@ -26,6 +25,27 @@ function FanlarBoyichaOquvResurslariAll() {
           })}
         </div>
         <div className="cardsBlok">
+          <div className="cardss">
+            <div className="imgBlok">
+              <img src={photo} />
+            </div>
+            <h4>Farmakologiya va repseptura asoslari</h4>
+            <p>Kasb (mutaxassislik) kodi va nomi 40910204 – Hamshiralik ishi</p>
+          </div>
+          <div className="cardss">
+            <div className="imgBlok">
+              <img src={photo} />
+            </div>
+            <h4>Farmakologiya va repseptura asoslari</h4>
+            <p>Kasb (mutaxassislik) kodi va nomi 40910204 – Hamshiralik ishi</p>
+          </div>
+          <div className="cardss">
+            <div className="imgBlok">
+              <img src={photo} />
+            </div>
+            <h4>Farmakologiya va repseptura asoslari</h4>
+            <p>Kasb (mutaxassislik) kodi va nomi 40910204 – Hamshiralik ishi</p>
+          </div>
           <div className="cardss">
             <div className="imgBlok">
               <img src={photo} />

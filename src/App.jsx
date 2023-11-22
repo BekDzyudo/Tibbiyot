@@ -14,6 +14,9 @@ import NotFound from "./pages/notFound/NotFound";
 import YaratiladiganAdabiyotlar from "./pages/yaratiladiganAdabiyotlar/YaratiladiganAdabiyotlar";
 import OquvResurslarigaQoyilganTalablar from "./pages/oquvResurslarigaQoyilganTalablar/OquvResurslarigaQoyilganTalablar";
 import FanlarBoyichaOquvResurslariAll from "./pages/fanlarBoyichaOquvResurslariAll/FanlarBoyichaOquvResurslariAll";
+import FanMundarija from "./pages/fanlarBoyichaOquvResurslariAll/fanMundarija/FanMundarija";
+import PullikResurslar from "./pages/fanlarBoyichaOquvResurslariAll/PullikResurslar";
+import LayoutFanMundarija from "./pages/fanlarBoyichaOquvResurslariAll/fanMundarija/LayoutFanMundarija";
 
 function App() {
   const routes = createBrowserRouter([
@@ -67,7 +70,23 @@ function App() {
         },
         {
           path: "Fanlar-boyicha-oquv-resurslari",
-          element: <FanlarBoyichaOquvResurslariAll />,
+          element: <PullikResurslar />,
+          children: [
+            {
+              index: true,
+              element: <FanlarBoyichaOquvResurslariAll />,
+            },
+            {
+              path: "fan",
+              element: <LayoutFanMundarija />,
+              children: [
+                {
+                  index: true,
+                  element: <FanMundarija />,
+                },
+              ],
+            },
+          ],
         },
         {
           path: "*",
