@@ -17,7 +17,7 @@ import FanlarBoyichaOquvResurslariAll from "./pages/fanlarBoyichaOquvResurslariA
 import FanMundarija from "./pages/fanlarBoyichaOquvResurslariAll/fanMundarija/FanMundarija";
 import PullikResurslar from "./pages/fanlarBoyichaOquvResurslariAll/PullikResurslar";
 import LayoutFanMundarija from "./pages/fanlarBoyichaOquvResurslariAll/fanMundarija/LayoutFanMundarija";
-import MaruzaMatn from "./pages/fanlarBoyichaOquvResurslariAll/fanMundarija/mavzu/MaruzaMatn";
+import MaruzaMatn from "./pages/fanlarBoyichaOquvResurslariAll/fanMundarija/maruzaMatn/MaruzaMatn";
 
 function App() {
   const routes = createBrowserRouter([
