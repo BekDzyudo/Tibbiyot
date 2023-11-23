@@ -1,4 +1,4 @@
-.loginContent {
+.royxatdanOtishContent {
   position: fixed;
   top: 0;
   left: 0;
@@ -8,7 +8,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  .loginModal {
+  .royxatdanOtishModal {
     position: relative;
     top: 0;
     left: 0;
@@ -87,7 +87,7 @@
         background: none;
         border: none;
         width: 100%;
-        margin-bottom: 5px;
+        margin-bottom: 30px;
         padding: 5px 0px;
         font-size: 20px;
         outline: none;
@@ -102,22 +102,26 @@
           letter-spacing: 0.16px;
         }
       }
-      .parolniTiklash {
-        display: flex;
-        justify-content: flex-end;
+      .passwordQayta {
+        background: none;
+        border: none;
+        width: 100%;
         margin-bottom: 30px;
-        a {
-          color: #091242;
-          text-align: right;
+        padding: 5px 0px;
+        font-size: 20px;
+        outline: none;
+        border-bottom: 2px solid #ccc;
+        &::placeholder {
+          color: var(--gray_6, #666);
           font-family: Montserrat;
-          font-size: 18px;
+          font-size: 20px;
           font-style: normal;
-          font-weight: 600;
-          line-height: 150%; /* 18px */
-          letter-spacing: 0.12px;
+          font-weight: 500;
+          line-height: 150%; /* 24px */
+          letter-spacing: 0.16px;
         }
       }
-      .loginBtn {
+      .royxatdanOtishBtn {
         display: flex;
         justify-content: center;
         margin-bottom: 25px;

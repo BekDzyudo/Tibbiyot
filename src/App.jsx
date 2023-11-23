@@ -19,6 +19,7 @@ import PullikResurslar from "./pages/fanlarBoyichaOquvResurslariAll/PullikResurs
 import LayoutFanMundarija from "./pages/fanlarBoyichaOquvResurslariAll/fanMundarija/LayoutFanMundarija";
 import MaruzaMatn from "./pages/fanlarBoyichaOquvResurslariAll/fanMundarija/maruzaMatn/MaruzaMatn";
 import Login from "./pages/authModal/login/Login";
+import RoyxatdanOtish from "./pages/authModal/royxatdanOtish/RoyxatdanOtish";
 
 function App() {
   const routes = createBrowserRouter([
@@ -95,8 +96,12 @@ function App() {
           ],
         },
         {
-          path: "/login",
+          path: "login",
           element: <Login />,
+        },
+        {
+          path: "royxatdan-otish",
+          element: <RoyxatdanOtish />,
         },
         {
           path: "*",
