@@ -83,10 +83,10 @@ function Header() {
             <li>
               <img src={phone} /> <p>1003</p>
             </li>
-            <li className="login">
+            <Link to="/login" className="login">
               <img src={login} alt="Kirish" />{" "}
               <p>{t("home_page.top_navbar.login")}</p>
-            </li>
+            </Link>
           </ul>
           <ul className="dropdownNavbar">
             <li className="liDropLink1">

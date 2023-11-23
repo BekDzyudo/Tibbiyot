@@ -18,6 +18,7 @@ import FanMundarija from "./pages/fanlarBoyichaOquvResurslariAll/fanMundarija/Fa
 import PullikResurslar from "./pages/fanlarBoyichaOquvResurslariAll/PullikResurslar";
 import LayoutFanMundarija from "./pages/fanlarBoyichaOquvResurslariAll/fanMundarija/LayoutFanMundarija";
 import MaruzaMatn from "./pages/fanlarBoyichaOquvResurslariAll/fanMundarija/maruzaMatn/MaruzaMatn";
+import Login from "./pages/authModal/login/Login";
 
 function App() {
   const routes = createBrowserRouter([
@@ -92,6 +93,10 @@ function App() {
               ],
             },
           ],
+        },
+        {
+          path: "/login",
+          element: <Login />,
         },
         {
           path: "*",
