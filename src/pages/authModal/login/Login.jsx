@@ -14,7 +14,7 @@ function Login() {
           <input className="email" type="email" placeholder="Email" />
           <input className="password" type="password" placeholder="Parol" />
           <div className="parolniTiklash">
-            <Link>Parolni tiklash</Link>
+            <Link to="/parolni-tiklash">Parolni tiklash</Link>
           </div>
           <div className="loginBtn">
             <button>Kirish</button>

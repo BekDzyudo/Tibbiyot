@@ -20,6 +20,7 @@ import LayoutFanMundarija from "./pages/fanlarBoyichaOquvResurslariAll/fanMundar
 import MaruzaMatn from "./pages/fanlarBoyichaOquvResurslariAll/fanMundarija/maruzaMatn/MaruzaMatn";
 import Login from "./pages/authModal/login/Login";
 import RoyxatdanOtish from "./pages/authModal/royxatdanOtish/RoyxatdanOtish";
+import ParolniTiklash from "./pages/authModal/parolniTiklash/ParolniTiklash";
 
 function App() {
   const routes = createBrowserRouter([
@@ -102,6 +103,10 @@ function App() {
         {
           path: "royxatdan-otish",
           element: <RoyxatdanOtish />,
+        },
+        {
+          path: "parolni-tiklash",
+          element: <ParolniTiklash />,
         },
         {
           path: "*",
