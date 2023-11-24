@@ -29,7 +29,7 @@ function SSBbuyrugi() {
   function handlePagination(e, p) {
     setPage(p);
   }
-  const url = `http://192.168.101.222:8000/ssb_buyruq?page=${page}`;
+  const url = `http://tibbiy-talim-resurslari.uz/ssb_buyruq?page=${page}`;
   const { data, isPending, error } = useGetFetch(url);
   console.log(data);
   if (!data) {

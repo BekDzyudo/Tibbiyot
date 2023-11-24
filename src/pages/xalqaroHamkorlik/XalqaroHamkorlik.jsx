@@ -10,7 +10,7 @@ import { useParams } from "react-router-dom";
 
 function XalqaroHamkorlik() {
   const { id } = useParams();
-  const url = `http://192.168.101.222:8000/hamkorlar/${id}`;
+  const url = `http://tibbiy-talim-resurslari.uz/hamkorlar/${id}`;
   const { data } = useGetFetch(url);
 
   return (

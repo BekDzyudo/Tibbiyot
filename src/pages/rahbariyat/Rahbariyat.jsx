@@ -10,7 +10,7 @@ import SmallContact from "../umumiyMalumot/components/SmallContact";
 import { useGetFetch } from "../../hooks/useGetFetch";
 
 function Rahbariyat() {
-  const url = `http://192.168.101.222:8000/rahbariyat`;
+  const url = `http://tibbiy-talim-resurslari.uz/rahbariyat`;
   const { data, isPending, error } = useGetFetch(url);
   if (!data) {
     return <p></p>;

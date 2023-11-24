@@ -2,6 +2,9 @@ import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { useGetFetch } from "../../hooks/useGetFetch";
+import { useContext } from "react";
+import { LoginContext } from "../../context/AuthLogin";
+
 // images
 import logo from "../../assets/icons/logo.svg";
 import logoOrg from "../../assets/icons/logoOrg.png";
@@ -19,9 +22,14 @@ function Header() {
   function onLanguage(e) {
     i18n.changeLanguage(e.target.value);
   }
+
   // hamkorlar idea
-  const url = "http://192.168.101.222:8000/kategoriya_hamkor";
+  const url = "http://tibbiy-talim-resurslari.uz/kategoriya_hamkor";
   const { data: hamkors } = useGetFetch(url);
+
+  // login
+  const { token } = useContext(LoginContext);
+
   return (
     <header>
       <div className="topNavbar">
@@ -185,7 +193,7 @@ function Header() {
             </li>
             <li className="liDropLink5">
               <NavLink
-                to="/Fanlar-boyicha-oquv-resurslari"
+                to={token ? "/Fanlar-boyicha-oquv-resurslari" : "/login"}
                 className="dropLink"
               >
                 <p>{t("home_page.dropdownNavbar.oquv_resurslar")}</p>

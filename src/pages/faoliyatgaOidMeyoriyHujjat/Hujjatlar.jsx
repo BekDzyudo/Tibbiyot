@@ -27,11 +27,11 @@ function Hujjatlar() {
   function handlePagination(e, p) {
     setPage(p);
   }
-  const url = `http://192.168.101.222:8000/meyoriy_hujjat?page=${page}`;
+  const url = `http://tibbiy-talim-resurslari.uz/meyoriy_hujjat?page=${page}`;
   const { data, isPending, error } = useGetFetch(url);
 
   if (!data) {
-    return <p></p>;
+    return <p>kelyapti</p>;
   }
   return (
     <div className="hujjat">
