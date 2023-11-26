@@ -1,31 +1,43 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 // scss
 import "./login.scss";
 import { useContext } from "react";
 import { LoginContext } from "../../../context/AuthLogin";
 
 function Login() {
+  const navigate = useNavigate();
   const { setToken, token } = useContext(LoginContext);
 
   const [username, setUserName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-
   function onSubmit(e) {
     e.preventDefault();
-    
-    setToken({
-      username: username,
-      email: email,
-      password: password,
-    });
+
+    fetch("https://reqres.in/api/login", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        email: email,
+        password: password,
+      }),
+    })
+      .then((res) => res.json())
+      .then((data) => setToken(data.token))
+      .catch((err) => console.log(err));
   }
 
   return (
     <div className="loginContent">
       <div className="loginModal">
-        <i class="fa fa-times closeBtn" aria-hidden="true"></i>
+        <i
+          onClick={() => navigate(-1)}
+          className="fa fa-times closeBtn"
+          aria-hidden="true"
+        ></i>
         <h1>Tizimga kirish</h1>
         <form onSubmit={onSubmit}>
           <input

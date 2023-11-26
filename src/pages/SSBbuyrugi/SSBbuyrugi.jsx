@@ -31,7 +31,6 @@ function SSBbuyrugi() {
   }
   const url = `http://tibbiy-talim-resurslari.uz/ssb_buyruq?page=${page}`;
   const { data, isPending, error } = useGetFetch(url);
-  console.log(data);
   if (!data) {
     return <p></p>;
   }
