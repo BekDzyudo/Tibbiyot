@@ -4,11 +4,10 @@ import "./bolimlar.scss";
 // images
 import person from "../../assets/images/person.png";
 // components
-import Sidebar from "../../components/sidebar/Sidebar";
 import OqXalat from "../umumiyMalumot/components/OqXalat";
 import SmallContact from "../umumiyMalumot/components/SmallContact";
-import BolimlarSlider from "./bolimlarSlider/BolimlarSlider";
 import usePagenation from "../../components/pagenation/usePagenation";
+import SidebarMarkazTuzilmasi from "../../components/sidebar/SidebarMarkazTuzilmasi";
 
 function Bolimlar() {
   const url = "https://jsonplaceholder.typicode.com/users";
@@ -92,14 +91,11 @@ function Bolimlar() {
           {pagenation}
         </div>
         <div className="layout">
-          <Sidebar />
+          <SidebarMarkazTuzilmasi />
           <OqXalat />
           <SmallContact />
         </div>
       </div>
-      <hr style={{ marginBottom: "50px", marginTop: "30px" }} />
-      <BolimlarSlider />
-      <hr style={{ marginBottom: "50px" }} />
     </div>
   );
 }

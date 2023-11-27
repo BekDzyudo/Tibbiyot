@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 //  component
-import SidebarTwo from "../../components/sidebar/SidebarTwo";
 import OqXalat from "../umumiyMalumot/components/OqXalat";
 import SmallContact from "../umumiyMalumot/components/SmallContact";
 import { useGetFetch } from "../../hooks/useGetFetch";
 import Loader from "../../components/loader/Loader";
 import { Pagination } from "@mui/material";
 import { Link } from "react-router-dom";
+import SidebarMarkazHaqida from "../../components/sidebar/SidebarMarkazHaqida";
 
 function Hujjatlar() {
   const month = [
@@ -80,7 +80,7 @@ function Hujjatlar() {
         ></Pagination>
       </div>
       <div className="layout">
-        <SidebarTwo />
+        <SidebarMarkazHaqida />
         <OqXalat />
         <SmallContact />
       </div>

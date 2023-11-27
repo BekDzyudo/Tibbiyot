@@ -1,8 +1,8 @@
 // components
-import Sidebar from "../../components/sidebar/Sidebar";
 import OqXalat from "./components/OqXalat";
 import SmallContact from "./components/SmallContact";
 import { useGetFetch } from "../../hooks/useGetFetch";
+import SidebarMarkazHaqida from "../../components/sidebar/SidebarMarkazHaqida";
 
 function Umumiy() {
   const url = "http://tibbiy-talim-resurslari.uz/common_information";
@@ -18,7 +18,7 @@ function Umumiy() {
         <div dangerouslySetInnerHTML={{ __html: data[0]?.description }}></div>
       </div>
       <div className="layout">
-        <Sidebar />
+        <SidebarMarkazHaqida />
         <OqXalat />
         <SmallContact />
       </div>

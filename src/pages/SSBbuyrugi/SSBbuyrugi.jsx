@@ -2,13 +2,13 @@ import React, { useState } from "react";
 // scss
 import "./ssbBuyruq.scss";
 // components
-import SidebarTwo from "../../components/sidebar/SidebarTwo";
 import OqXalat from "../umumiyMalumot/components/OqXalat";
 import SmallContact from "../umumiyMalumot/components/SmallContact";
 import { useGetFetch } from "../../hooks/useGetFetch";
 import { Pagination } from "@mui/material";
 import { Link } from "react-router-dom";
 import Loader from "../../components/loader/Loader";
+import SidebarMarkazHaqida from "../../components/sidebar/SidebarMarkazHaqida";
 
 function SSBbuyrugi() {
   const month = [
@@ -85,7 +85,7 @@ function SSBbuyrugi() {
           </>
         </div>
         <div className="layout">
-          <SidebarTwo />
+          <SidebarMarkazHaqida />
           <OqXalat />
           <SmallContact />
         </div>

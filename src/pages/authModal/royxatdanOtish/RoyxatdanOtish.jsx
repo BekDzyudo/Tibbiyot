@@ -1,14 +1,16 @@
 import React from "react";
 import "./royxatdanOtish.scss";
+import { useNavigate } from "react-router-dom";
 
 function RoyxatdanOtish() {
+  const navigate = useNavigate();
   return (
     <div className="royxatdanOtishContent">
       <div className="royxatdanOtishModal">
         <i
           class="fa fa-times closeBtn"
           aria-hidden="true"
-          onClick={() => setShow(false)}
+          onClick={() => navigate(-1)}
         ></i>
         <h1>Ro‘yxatdan o‘tish</h1>
         <form>

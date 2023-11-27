@@ -2,12 +2,12 @@ import React from "react";
 // scss
 import "./rahbariyat.scss";
 // components
-import Sidebar from "../../components/sidebar/Sidebar";
 import OqXalat from "../umumiyMalumot/components/OqXalat";
 import SmallContact from "../umumiyMalumot/components/SmallContact";
 // images
 // import person from "../../assets/images/person.png";
 import { useGetFetch } from "../../hooks/useGetFetch";
+import SidebarMarkazTuzilmasi from "../../components/sidebar/SidebarMarkazTuzilmasi";
 
 function Rahbariyat() {
   const url = `http://tibbiy-talim-resurslari.uz/rahbariyat`;
@@ -93,7 +93,7 @@ function Rahbariyat() {
           <hr />
         </div>
         <div className="layout">
-          <Sidebar />
+          <SidebarMarkazTuzilmasi />
           <OqXalat />
           <SmallContact />
         </div>

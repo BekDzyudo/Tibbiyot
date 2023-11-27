@@ -5,7 +5,7 @@ import { Link, NavLink } from "react-router-dom";
 import kasbiyKurs from "../../assets/icons/kasbiyKurs.svg";
 import pullikKurs from "../../assets/icons/pullikKurs.svg";
 import img from "../../assets/images/Photo.png";
-import Sidebar from "../../components/sidebar/Sidebar";
+import SidebarMarkazHaqida from "../../components/sidebar/SidebarMarkazHaqida";
 
 function OquvResurslar() {
   return (
@@ -28,9 +28,7 @@ function OquvResurslar() {
           </Link>
           <Link>
             <img src={pullikKurs} />
-            <p>
-             Talabalar va tibbiyot hodimlari uchun pullik resurslar
-            </p>
+            <p>Talabalar va tibbiyot hodimlari uchun pullik resurslar</p>
           </Link>
         </div>
       </div>
@@ -38,7 +36,7 @@ function OquvResurslar() {
         <img src={img} />
       </div>
       <div className="sidebarBlok">
-        <Sidebar />
+        <SidebarMarkazHaqida />
       </div>
     </div>
   );

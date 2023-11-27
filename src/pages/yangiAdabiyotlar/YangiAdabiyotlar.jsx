@@ -4,11 +4,11 @@ import "./yangiAdabiyotlar.scss";
 // images
 import medic from "../../assets/images/medic.png";
 // components
-import Pagenation from "../../components/pagenation/Pagenation";
-import SidebarTwo from "../../components/sidebar/SidebarTwo";
+
 import OqXalat from "../umumiyMalumot/components/OqXalat";
 import SmallContact from "../umumiyMalumot/components/SmallContact";
 import usePagenation from "../../components/pagenation/usePagenation";
+import SidebarFaoliyat from "../../components/sidebar/SidebarFaoliyat";
 
 function YangiAdabiyotlar() {
   const url = "https://jsonplaceholder.typicode.com/posts";
@@ -43,7 +43,7 @@ function YangiAdabiyotlar() {
           {pagenation}
         </div>
         <div className="layout">
-          <SidebarTwo />
+          <SidebarFaoliyat />
           <OqXalat />
           <SmallContact />
         </div>

@@ -1,10 +1,10 @@
 import React from "react";
 // components
-import SidebarTwo from "../../components/sidebar/SidebarTwo";
 import OqXalat from "../umumiyMalumot/components/OqXalat";
 import SmallContact from "../umumiyMalumot/components/SmallContact";
 // scss
 import "./oquvResurslarigaQoyilganTalablar.scss";
+import SidebarMarkazHaqida from "../../components/sidebar/SidebarMarkazHaqida";
 
 function OquvResurslarigaQoyilganTalablar() {
   return (
@@ -77,7 +77,7 @@ function OquvResurslarigaQoyilganTalablar() {
           </p>
         </div>
         <div className="layout">
-          <SidebarTwo />
+          <SidebarMarkazHaqida />
           <OqXalat />
           <SmallContact />
         </div>

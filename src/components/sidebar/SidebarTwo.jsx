@@ -2,13 +2,13 @@ import React from "react";
 // images
 import menu from "../../assets/icons/menu.svg";
 import menuChild from "../../assets/icons/menuChild.svg";
-import "./sidebarTwo.scss";
+import "./sidebar.scss";
 
 import { NavLink } from "react-router-dom";
 
 function SidebarTwo() {
   return (
-    <div className="sidebarTwo">
+    <div className="sidebar">
       <ul>
         <li>
           <NavLink
